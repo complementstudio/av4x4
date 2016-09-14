@@ -16,7 +16,8 @@
     }
   }
   .text_small_blocks{
-    background: $light_grey;
+    background-color: $light_grey;
+    background-size: contain;
     width: 48%;
     float: left;
     margin-right: 30px;
