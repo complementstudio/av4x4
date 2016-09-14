@@ -1,39 +1,64 @@
-.header_section{
-  position: relative;
-
-  .header_bg{
-    background: url("../images/home_header_bg.png") no-repeat;
+.header_slider{
+  overflow: hidden;
+  .home_slider1{
+    background: url("../images/header_slide1.png") no-repeat;
+  }
+  .home_slider2{
+    background: url("../images/header_slide2.png") no-repeat;
+  }
+  .home_slider3{
+    background: url("../images/header_slide3.png") no-repeat;
+  }
+  .home_slider4{
+    background: url("../images/header_slide4.png") no-repeat;
+  }
+  .home_slider5{
+    background: url("../images/header_slide5.png") no-repeat;
+  }
+  .home_slider{
     background-size: cover;
     background-position: center top;
-    max-height: 980px;
-    padding-bottom: 250px;
+    min-height: 920px;
+  }
+  img{
+    width: 100%;
+  }
+}
+.header_section{
+  .header_black_section{
+    background: $black;
+    min-height: 320px;
+    width: 100%;
+  }
+
+  position: relative;
+  .header_bg{
+    //background: url("../images/home_header_bg.png") no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: 920px;
+    padding-bottom: 80px;
   }
 
   span.header_toggle_icon{
-    font-size: 40px;
-    color: $white;
+    @include font-source(40px,$white);
     float: right;
     cursor: pointer;
     display: none;
   }
-
   .header_contact{
     background: rgba($black,0.72);
     @include padding-two-param(4px,0);
-
     ul{
-
       li{
-        color: $white;
-        font-size: 17px;
+        @include font-source(17px,$white);
         font-family: $regular-font;
         span{
           color: $button_main_color;
           font-family: $bold-font;
         }
         .chat_button{
-          font-size: 13px;
-          color: $white;
+          @include font-source(13px,$white);
           @include padding-two-param(5px,10px);
           background: $button_main_color;
           display: inline-block;
@@ -63,7 +88,6 @@
       position: relative;
     }
     @include padding-two-param(7px,10px);
-
     background: rgba($gradient_top_color,0.78); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba($gradient_top_color,0.78) 0%, rgba($gradient_bottom_color,0.78) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  rgba($gradient_top_color,0.78) 0%,rgba($gradient_bottom_color,0.78) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -75,8 +99,7 @@
         position: relative;
         a{
           position: relative;
-          color: $menu_text_color;
-          font-size: 18px;
+          @include font-source(18px,$menu_text_color);
           letter-spacing: 0.3px;
           @include padding-two-param(10px,17px);
           display: inline-block;
@@ -131,11 +154,12 @@
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
       color: $white;
       font-family: $bold-font;
-      max-width: 700px;
+      max-width: 750px;
       float: right;
       text-align: right;
       line-height: 87px;
-      padding-top: 25%;
+      @include padding(22%,0,0,0);
+
     }
   }
   .header_bottom_section{
@@ -146,14 +170,14 @@
       background: url("../images/header_bottom_bg.png") no-repeat;
       @include padding-two-param(23px,0);
       background-size: 60% 100%;
-      min-height: 150px;
+      min-height: 210px;
       .text_section{
         width: 60%;
         float: left;
         p{
           color: $white;
           font-size: 22px;
-          width: 68%;
+          //width: 80%;
           span{
             font-family: $bold-font;
           }
@@ -165,7 +189,7 @@
         @include padding-two-param(24px,30px);
         @include position_absolute(absolute,0,0,inherit,inherit);
         background: $orange_bg;
-        min-height: 150px;
+        min-height: 210px;
         line-height: 24px;
       }
     }
@@ -193,7 +217,6 @@
     }
   }
 }
-
 @media  (max-width: 1400px){
   .header_section
   {
@@ -223,9 +246,7 @@
         font-size: 20px;
       }
     }
-
   }
-
 }
 @media  (min-width: 1100px){
   .header_section{
@@ -236,7 +257,6 @@
     }
   }
 }
-
 @media  (max-width: 1100px){
 
   .header_section
@@ -261,7 +281,6 @@
     .header_contact ul li{
       font-size: 12px;
     }
-
     span.header_toggle_icon {
       display: inline-block;
     }
@@ -314,37 +333,33 @@
         font-size: 18px;
       }
     }
-
   }
-
 }
 @media  (max-width: 767px){
   .header_section {
     .bg_text p {
       font-size: 46px;
       padding-bottom:50px;
-      line-height: 70px;
+      line-height: 55px;
     }
     .header_bottom_section {
       .black_section {
-        min-height: 260px;
+        min-height: 330px;
         background-size: cover;
         .text_section {
           width: 100%;
+          margin-top: 150px;
          p{
-           margin-top: 150px;
            font-size: 14px!important;
          }
-
         }
         .button_section {
           width: 100%;
+          min-height: 150px;
         }
       }
-
     }
     .header_contact{
-
       ul{
         text-align: right;
         li{
