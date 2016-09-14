@@ -1,0 +1,365 @@
+.header_section{
+  position: relative;
+
+  .header_bg{
+    background: url("../images/home_header_bg.png") no-repeat;
+    background-size: cover;
+    background-position: center top;
+    max-height: 980px;
+    padding-bottom: 250px;
+  }
+
+  span.header_toggle_icon{
+    font-size: 40px;
+    color: $white;
+    float: right;
+    cursor: pointer;
+    display: none;
+  }
+
+  .header_contact{
+    background: rgba($black,0.72);
+    @include padding-two-param(4px,0);
+
+    ul{
+
+      li{
+        color: $white;
+        font-size: 17px;
+        font-family: $regular-font;
+        span{
+          color: $button_main_color;
+          font-family: $bold-font;
+        }
+        .chat_button{
+          font-size: 13px;
+          color: $white;
+          @include padding-two-param(5px,10px);
+          background: $button_main_color;
+          display: inline-block;
+          font-family: $bold-font;
+          border-bottom: 2px solid darken($button_main_color,20%);
+        }
+        i.ion-social-facebook{
+          color: $fb_icon_color;
+        }
+        i.ion-social-instagram{
+          color: $white;
+        }
+        i.ion-social-youtube{
+          color: $youtube_icon_color;
+        }
+        a {
+          i{
+            font-size: 20px;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  .header_menu{
+    .wrapper{
+      position: relative;
+    }
+    @include padding-two-param(7px,10px);
+
+    background: rgba($gradient_top_color,0.78); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba($gradient_top_color,0.78) 0%, rgba($gradient_bottom_color,0.78) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba($gradient_top_color,0.78) 0%,rgba($gradient_bottom_color,0.78) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba($gradient_top_color,0.78) 0%,rgba($gradient_bottom_color,0.78) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#650705', endColorstr='#161313',GradientType=0 ); /* IE6-9 */
+    ul{
+      margin-right: -15px;
+      li{
+        position: relative;
+        a{
+          position: relative;
+          color: $menu_text_color;
+          font-size: 18px;
+          letter-spacing: 0.3px;
+          @include padding-two-param(10px,17px);
+          display: inline-block;
+          font-family: $bold-font;
+          &.active{
+            background: $active_menu_color;
+          }
+          &:hover{
+            background: $active_menu_color;
+          }
+        }
+      }
+    }
+    ul.menu_dropdown{
+      background: $white;
+      @include position_absolute(absolute,52px,inherit,inherit,inherit);
+      min-width: 200px;
+      @include padding(7px,7px,40px,7px);
+      border-bottom: 5px solid $button_main_color;
+      left: 5px;
+      display: none;
+      &:before{
+        content: " ";
+        border-top: 14px solid white;
+        width: 150px;
+        display: block;
+        @include position_absolute(absolute,-7px,inherit,inherit,0);
+      }
+      li{
+        a{
+          color: $dropdown-text_color;
+          font-size: 14px;
+          display: block;
+          @include padding-two-param(5px,10px);
+          &:hover{
+            background: $white;
+            color: $button_main_color;
+          }
+          &.active_dropdown_link{
+            color: $button_main_color;
+          }
+        }
+      }
+    }
+    img.header_logo{
+      @include position_absolute(absolute,-25px,inherit,inherit,0);
+    }
+  }
+  .bg_text{
+    p{
+      font-size: 80px;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+      color: $white;
+      font-family: $bold-font;
+      max-width: 700px;
+      float: right;
+      text-align: right;
+      line-height: 87px;
+      padding-top: 25%;
+    }
+  }
+  .header_bottom_section{
+    width: 100%;
+    @include position_absolute(absolute,inherit,inherit,0,inherit);
+    border-bottom: 5px solid #926204;
+    .black_section{
+      background: url("../images/header_bottom_bg.png") no-repeat;
+      @include padding-two-param(23px,0);
+      background-size: 60% 100%;
+      min-height: 150px;
+      .text_section{
+        width: 60%;
+        float: left;
+        p{
+          color: $white;
+          font-size: 22px;
+          width: 68%;
+          span{
+            font-family: $bold-font;
+          }
+        }
+      }
+      .button_section{
+        width: 41%;
+        float: left;
+        @include padding-two-param(24px,30px);
+        @include position_absolute(absolute,0,0,inherit,inherit);
+        background: $orange_bg;
+        min-height: 150px;
+        line-height: 24px;
+      }
+    }
+  }
+  .contact_button{
+    background: $button_main_color;
+    display: inline-block;
+    color: $white;
+    @include padding-two-param(20px,30px);
+    border-bottom: 4px solid $white;
+    span{
+      display: block;
+      text-align: center;
+      &:first-child{
+        font-size: 28px;
+        font-family: $bold-font;
+      }
+      &:last-child{
+        font-size: 24px;
+        margin-top: 10px;
+      }
+    }
+    &:hover{
+      background: darken($button_main_color,10%);
+    }
+  }
+}
+
+@media  (max-width: 1400px){
+  .header_section
+  {
+    .header_menu
+    {
+      a{
+        font-size: 14px!important;
+      }
+      ul.menu_dropdown{
+        top:46px;
+      }
+    }
+    .text_section p{
+      font-size: 17px!important;
+    ;
+    }
+    .bg_text p{
+      font-size: 60px;
+      max-width: 600px;
+    }
+    .contact_button span
+    {
+      &:first-child {
+        font-size: 25px;
+      }
+      &:last-child{
+        font-size: 20px;
+      }
+    }
+
+  }
+
+}
+@media  (min-width: 1100px){
+  .header_section{
+    .header_menu{
+      ul.main_menu{
+      display: block!important;
+      }
+    }
+  }
+}
+
+@media  (max-width: 1100px){
+
+  .header_section
+  {
+    .header_bottom_section
+    {
+      .black_section
+      {
+        .text_section {
+          width: 50%;
+          float: left;
+          p{
+            width: 100%;
+          }
+        }
+        .button_section{
+          width: 50%;
+        }
+      }
+
+    }
+    .header_contact ul li{
+      font-size: 12px;
+    }
+
+    span.header_toggle_icon {
+      display: inline-block;
+    }
+    .header_menu
+    {
+      .wrapper{
+        position: inherit;
+      }
+      ul.main_menu{
+        display: none;
+        @include position_absolute(absolute,inherit,0,inherit,0);
+        background: rgba($black,0.9);
+        width: 100%;
+        margin: 0;
+        top: 109px;
+        z-index: 2;
+        li{
+          padding: 0;
+          display: block;
+          a{
+            display: block;
+          }
+        }
+      }
+      ul.menu_dropdown{
+        position: relative;
+        width: 100%;
+        background: rgba($black,0.9);
+        @include padding-two-param(7px,7px);
+        top: 0;
+        left: 0;
+        &:before{
+          display: none;
+        }
+      }
+      img.header_logo {
+        top: 5px;
+        left: 10px;
+        width: 150px;
+      }
+    }
+  }
+}
+@media  (max-width: 900px){
+  .header_section
+  {
+    .contact_button
+    {
+      span:first-child {
+        font-size: 18px;
+      }
+    }
+
+  }
+
+}
+@media  (max-width: 767px){
+  .header_section {
+    .bg_text p {
+      font-size: 46px;
+      padding-bottom:50px;
+      line-height: 70px;
+    }
+    .header_bottom_section {
+      .black_section {
+        min-height: 260px;
+        background-size: cover;
+        .text_section {
+          width: 100%;
+         p{
+           margin-top: 150px;
+           font-size: 14px!important;
+         }
+
+        }
+        .button_section {
+          width: 100%;
+        }
+      }
+
+    }
+    .header_contact{
+
+      ul{
+        text-align: right;
+        li{
+          &:first-child,&:nth-child(2){
+            width: 100%;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    ul.main_menu{
+      top: 156px!important;
+    }
+    img.header_logo{
+      top: 40px!important;
+    }
+  }
+}

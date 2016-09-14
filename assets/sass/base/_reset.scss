@@ -1,0 +1,18 @@
+body{
+  font-family: $regular-font;
+}
+.wrapper{
+  max-width: 1370px;
+  margin: 0 auto;
+  @include padding-two-param(0,15px);
+}
+ul{
+  margin-bottom: 0!important;
+}
+a:hover,a:focus{
+  text-decoration: none!important;
+  @include transition(all linear 0.3s);
+}
+a{
+  @include transition(all linear 0.3s);
+}

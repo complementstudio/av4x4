@@ -1,0 +1,30 @@
+@mixin padding-two-param($top-bottom, $right-lef){
+  padding:$top-bottom $right-lef;
+}
+@mixin padding($top, $right, $bottom, $left){
+  padding: $top $right $bottom $left;
+}
+@mixin transition($transition...){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+@mixin position_absolute($pos,$top,$right,$bottom,$left){
+  position: $pos;
+  top:$top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin padding-bottom($pad-bottom){
+  padding-bottom: $pad-bottom;
+}
+@mixin font-source($size: false, $colour: false, $weight: false,  $lh: false) {
+  font-family: $regular-font;
+  @if $size { font-size: $size; }
+  @if $colour { color: $colour; }
+  @if $weight { font-weight: $weight; }
+  @if $lh { line-height: $lh; }
+}
