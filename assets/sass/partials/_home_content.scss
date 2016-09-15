@@ -46,6 +46,24 @@
         font-family: $regular-font;
       }
     }
+    &.service_block1{
+      @include background('../images/services/Bumpers&RollCages1.jpg',no-repeat,cover);
+    }
+    &.service_block2{
+      @include background('../images/services/Bumpers&RollCages3.jpg',no-repeat,cover);
+    }
+    &.service_block3{
+      @include background('../images/services/Bumpers&RollCages4.jpg',no-repeat,cover);
+    }
+    &.service_block4{
+      @include background('../images/services/Bumpers&RollCages5.jpg',no-repeat,cover);
+    }
+    &.service_block5{
+      @include background('../images/services/Bumpers&RollCages6.jpg',no-repeat,cover);
+    }
+    &.service_block6{
+      @include background('../images/services/Bumpers&RollCages7.jpg',no-repeat,cover);
+    }
   }
   .home_small_title{
     font-size: 45px;
@@ -76,10 +94,9 @@
     }
   }
   .crew_section{
-    background: url("../images/crew_bg.png") no-repeat;
+    @include background('../images/crew_bg.png',no-repeat,cover);
     height: 850px;
     position: relative;
-    background-size: cover;
     background-attachment: fixed;
     border-bottom: 45px solid #842624;
     .wrapper{
@@ -212,12 +229,11 @@
   }
   .view_pakages_section{
     .left_block{
-      background: url("../images/header_bottom_bg.png") no-repeat;
+      @include background('../images/header_bottom_bg.png',no-repeat,cover);
       @include padding(20px,0,20px,15%);
       width: 60%;
       float: left;
-      //min-height: 240px;
-      background-size: cover;
+      min-height: 220px;
       @media (max-width: 1750px){
         @include padding(20px,0,20px,13%);
       }
@@ -282,9 +298,8 @@
     }
   }
   .pakages_info{
-    background: url("../images/pakages_bg.png") no-repeat;
+    @include background('../images/pakages_bg.png',no-repeat,100% auto);
     background-position: bottom;
-    background-size: 100% auto;
     @include padding-two-param(50px,0);
     .header_section{
       h2{
@@ -313,20 +328,15 @@
         }
       }
       .stage1_image{
-        background: url("../images/stage1.jpg") no-repeat;
-        background-size: cover;
-
-
+        @include background('../images/stage1.jpg',no-repeat,cover);
       }
       .stage2_image{
-        background: url("../images/stage2.jpg") no-repeat;
-        background-size: cover;
+        @include background('../images/stage2.jpg',no-repeat,cover);
         background-position: center center;
 
       }
       .stage3_image{
-        background: url("../images/stage3.png") no-repeat;
-        background-size: cover;
+        @include background('../images/stage3.png',no-repeat,cover);
         background-position: center center;
 
       }
@@ -365,9 +375,8 @@
     }
   }
   .client_feedback_section{
-    background: url("../images/feedback_bg.png") no-repeat;
+    @include background('../images/feedback_bg.png',no-repeat,cover);
     @include padding-two-param(98px,0);
-    background-size: cover;
     .feedback_wrapper{
       max-width: 1030px;
       margin: 0 auto;
@@ -450,10 +459,11 @@
   }
   .text_small_blocks {
     .text_content {
-      width: 350px!important;
+      width: 65%!important;
       min-height: 200px!important;
       h2{
         font-size: 26px!important;
+
       }
       p{
         font-size: 15px!important;
@@ -608,6 +618,15 @@
     .pakages_info .pakages_info_block {
       width: 100%;
     }
+    .text_small_blocks {
+      .text_content {
+        h2{
+          font-size: 18px!important;
+         word-break: break-all;
+        }
+
+      }
+    }
   }
 }
 @media (max-width: 700px){
@@ -675,10 +694,6 @@
     }
     .home_small_title {
       font-size: 25px;
-    }
-    .text_small_blocks .text_content {
-      width: 100%!important;
-      min-height: 200px !important;
     }
     .pakages_info_block a {
       @include padding-two-param(20px,20px!important);

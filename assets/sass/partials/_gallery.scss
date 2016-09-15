@@ -1,0 +1,97 @@
+.home_content{
+  &.customer_gallery{
+    .work_img_block {
+
+      @media (max-width: 500px){
+        width: 100%;
+      }
+      a{
+        @media (max-width: 700px){
+          @include padding-two-param(24%,0!important);
+        }
+      }
+    }
+    .gallery-wrapper{
+      max-width: 1400px;
+      margin: 0 auto;
+      @include padding-two-param(0,15px);
+    }
+    padding-top: 0;
+    .header_section{
+      h2{
+        text-align: left;
+        @include font-source(70px,$grey_text);
+        font-family: $bold-font;
+        @media (max-width: 1000px){
+         font-size: 40px;
+        }
+      }
+      p{
+        text-align: left;
+        @include font-source(22px,$grey_text,normal,1.45,1.2px);
+        width: 75%;
+        margin: 30px 0 60px 0;
+        @media (max-width: 1000px){
+          @include font-source(20px,$grey_text,normal,normal);
+          width: 100%;
+          letter-spacing: normal;
+        }
+      }
+    }
+    .view_pakages_section{
+      //@include padding(130px,0,0,0);
+      margin: 130px 0 120px 0;
+      border-bottom: 10px solid $yellow-border;
+      .left_block{
+       padding-top: 60px;
+        p{
+          @include font-source(20px,$white,normal,1.6,1.1px);
+          width: 70%;
+
+        }
+      }
+      .right_block{
+        @include padding(25px,0,25px,50px);
+        @media (max-width: 950px){
+          @include padding(25px,0,25px,30px);
+        }
+        .contact_btn{
+          background: $button_main_color;
+          @include padding(25px,35px,15px,35px);
+          display: inline-block;
+          text-align: center;
+          margin-left: 20px;
+          @media (max-width: 1300px){
+            margin-left: 0;
+          }
+          &:hover{
+            background: darken($button_main_color,10%);
+          }
+          span{
+            @include font-source(32px,$white);
+            font-family: $bold-font;
+            margin-top: -10px;
+            border-bottom: none;
+            display: block;
+            @media (max-width: 1300px){
+              font-size: 23px;
+              margin-left: 0;
+            }
+            @media (max-width: 950px){
+              font-size: 19px;
+            }
+          }
+        }
+        p{
+          @include font-source(24px,$white);
+          letter-spacing: 0.5px;
+          margin-top: 13px;
+          @media (max-width: 1300px){
+            font-size: 17px;
+          }
+
+        }
+      }
+    }
+  }
+}

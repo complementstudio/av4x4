@@ -1,0 +1,130 @@
+.contact_page{
+  padding-bottom: 140px;
+  .header_section{
+    h2{
+      @include font-source(70px,$grey_text);
+      font-family: $bold-font;
+    }
+    p{
+      @include font-source(22px,$grey_text,normal,1.45);
+    }
+  }
+  .contact_images_block{
+    margin: 45px 0;
+    .img_block{
+      width: 23.8%;
+      float: left;
+      margin-right: 1.5%;
+      min-height: 200px;
+      background: #d8d8d8;
+      @media (max-width: 900px){
+        width: 48.5%;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 550px){
+        width: 100%;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  .shop_info{
+    width: 40%;
+    float: left;
+    @media (max-width: 900px){
+      width: 100%;
+    }
+    .bold_text{
+      @include font-source(22px,$grey_text,normal,1.18,1.2px);
+      font-family: $bold-font;
+      width: 90%;
+    }
+    .normal_text{
+      @include font-source(18px,$grey_text,normal,1.44);
+      width: 90%;
+    }
+    ul{
+      margin: 60px 0 30px 0!important;
+      li{
+        @include font-source(19px,$grey_text,normal,1.44,0.3);
+        &:first-child,&:nth-child(2){
+          font-family: $bold-font;
+        }
+      }
+    }
+  }
+  .contact_form{
+    width: 60%;
+    float: left;
+    @media (max-width: 900px){
+      width: 100%;
+    }
+    ul{
+      li{
+        padding-right: 0;
+        width: 33%;
+        @media (max-width: 1150px){
+          width: 32.7%;
+        }
+      }
+    }
+    textarea{
+      height: 490px;
+      margin-top: 17px;
+      text-align: center;
+      @include padding(70px,115px,0,115px);
+      @include input-placeholder{
+        @include font-source(52px,#888888);
+        font-family: $bold-font;
+        @media (max-width: 1400px){
+         font-size: 35px;
+          text-align: center;
+        }
+      }
+      &:focus{
+        border: 1px solid $button_main_color;
+      }
+    }
+  }
+  .form_title{
+    @include font-source(52px,$black);
+    font-family: $bold-font;
+    margin-top: 0;
+  }
+}
+@media  screen and (max-width: 900px){
+  .contact_page{
+    padding-bottom: 50px;
+    .shop_info .bold_text{
+      font-size: 19px;
+    }
+    .header_section
+    {
+      h2{
+        font-size: 40px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    .form_title{
+      font-size: 35px;
+    }
+    .contact_form
+    {
+      ul li {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      textarea{
+        padding: 20px;
+        height: 200px;
+        @include input-placeholder{
+          font-size: 20px;
+        }
+      }
+    }
+
+  }
+}
