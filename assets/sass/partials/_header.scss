@@ -1,22 +1,21 @@
 .header_slider{
   overflow: hidden;
   .home_slider1{
-    background: url("../images/header_slide1.png") no-repeat;
+    @include background('../images/header_slide1.png',no-repeat,cover);
   }
   .home_slider2{
-    background: url("../images/header_slide2.png") no-repeat;
+    @include background('../images/header_slide2.png',no-repeat,cover);
   }
   .home_slider3{
-    background: url("../images/header_slide3.png") no-repeat;
+    @include background('../images/header_slide3.png',no-repeat,cover);
   }
   .home_slider4{
-    background: url("../images/header_slide4.png") no-repeat;
+    @include background('../images/header_slide4.png',no-repeat,cover);
   }
   .home_slider5{
-    background: url("../images/header_slide5.png") no-repeat;
+    @include background('../images/header_slide5.png',no-repeat,cover);
   }
   .home_slider{
-    background-size: cover;
     background-position: center top;
     min-height: 920px;
   }

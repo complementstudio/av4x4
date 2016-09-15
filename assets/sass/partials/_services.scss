@@ -1,0 +1,69 @@
+.our_services_block{
+  .header_section{
+    h2{
+      @include font-source(70px,$grey_text);
+      font-family: $bold-font;
+      @media (max-width: 1000px){
+        font-size: 40px;
+      }
+    }
+    p{
+      @include font-source(22px,$grey_text,normal,1.45);
+      letter-spacing: 1.2px;
+      @media (max-width: 1000px){
+        font-size: 16px;
+      }
+    }
+  }
+  .service_blocks_content{
+    padding-bottom: 170px;
+  }
+  .services_blocks{
+
+    width: 30%;
+    float: left;
+    min-height: 400px;
+    background-position: center;
+    position: relative;
+    margin:1.5%;
+    &.service1{
+      @include background('../images/services/our_service1.jpg',no-repeat,cover);
+    }
+    &.service2{
+      @include background('../images/services/our_service2.jpg',no-repeat,cover);
+    }
+    &.service3{
+      @include background('../images/services/our_service3.jpg',no-repeat,cover);
+    }
+    &.service4{
+      @include background('../images/services/our_service4.jpg',no-repeat,cover);
+    }
+    @media (max-width: 1000px){
+      width: 47%;
+    }
+    @media (max-width: 650px){
+      width: 97%;
+    }
+    .text-content{
+      @include padding-two-param(20px,18px);
+      background: $small_blocks_bg;
+      @include position_absolute(absolute,inherit,0,0,0);
+      &:hover{
+        background: $grey_text;
+      }
+      h3{
+        @include font-source(25px,$white);
+        font-family: $bold-font;
+        margin-top: 0;
+        @media (max-width: 1000px){
+         font-size: 20px;
+        }
+
+      }
+      p{
+        @include font-source(16px,$white,normal,1.38);
+        letter-spacing: 0.9px;
+      }
+    }
+  }
+}

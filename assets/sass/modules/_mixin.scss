@@ -21,10 +21,25 @@
 @mixin padding-bottom($pad-bottom){
   padding-bottom: $pad-bottom;
 }
-@mixin font-source($size: false, $colour: false, $weight: false,  $lh: false) {
+@mixin font-source($size: false, $colour: false, $weight: false,  $lh: false, $lsp:false) {
   font-family: $regular-font;
   @if $size { font-size: $size; }
   @if $colour { color: $colour; }
   @if $weight { font-weight: $weight; }
   @if $lh { line-height: $lh; }
+  @if $lsp { letter-spacing: $lsp; }
+}
+@mixin background($imgpath,$repeat,$size) {
+    background: {
+      image: url($imgpath);
+      size: $size;
+      repeat: $repeat;
+  }
+}
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
 }
