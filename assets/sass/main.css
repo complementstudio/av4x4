@@ -7263,7 +7263,8 @@ button.close {
     @media screen and (max-width: 1050px) {
       .meet_team_page .top_reasons_section .reasons_block {
         width: 48%;
-        margin-bottom: 15px; } }
+        margin-bottom: 15px;
+        padding: 20px; } }
     @media screen and (max-width: 550px) {
       .meet_team_page .top_reasons_section .reasons_block {
         width: 100%;
