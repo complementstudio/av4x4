@@ -1,0 +1,91 @@
+.services_details{
+    h2.section_title{
+      @include font-source(60px,$grey_text);
+      font-family: $bold-font;
+      margin-bottom: 50px;
+    }
+  .details_content{
+    width: calc(100% - 300px);
+    float: left;
+    .img_block{
+      height: 450px;
+      width: 350px;
+      float: left;
+      @include background('../images/services/our_service1.jpg',no-repeat,cover);
+      background-position: center;
+    }
+    .text_section{
+      float: left;
+      width: calc(100% - 400px);
+      padding-left: 30px;
+      p{
+        @include font-source(22px,$grey_text,normal,32px,1.2px);
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .other_services_list{
+    width: 280px;
+    float: right;
+    p{
+      @include font-source(25px,$black);
+      font-family: $bold-font;
+    }
+    li{
+      line-height: 35px;
+      a{
+        @include font-source(22px,$grey_text,normal,1.2px);
+        &:hover{
+          color: $active_menu_color;
+        }
+      }
+    }
+  }
+  .customer_images_header{
+    h2{
+      @include font-source(52px,$black);
+      font-family: $bold-font;
+    }
+    p{
+      @include font-source(22px,$grey_text,normal,32px,1.2px);
+    }
+  }
+  .view_img_btn{
+    @include font-source(28px,$white);
+    font-family: $bold-font;
+    background: $black;
+    display: table;
+    margin: 25px auto;
+    @include padding-two-param(20px,53px);
+    border-bottom: 5px solid $button_main_color;
+    &:hover{
+      background: $button_main_color;
+      border-bottom-color: $black;
+    }
+  }
+}
+.full_narrow_block{
+  border-bottom: 10px solid $grey_text;
+  margin: 100px 0;
+  .left_block{
+    @include background('../images/narrow_block_bg.png',no-repeat,cover);
+    width: 60%;
+    float: left;
+    padding: 45px;
+    position: relative;
+    min-height: 185px;
+    p{
+      @include font-source(22px,$grey_text,normal,32px);
+      max-width: 700px;
+      float: right;
+    }
+  }
+  .right_block{
+    width: 40%;
+    float: left;
+    background: $orange_bg;
+    min-height: 185px;
+    @include padding(40px,0,40px,70px);
+  }
+
+}
