@@ -5836,6 +5836,9 @@ button.close {
 
 .header_section {
   position: relative; }
+  .header_section .chat_below_link {
+    color: #993d3b;
+    text-decoration: underline !important; }
   .header_section .header_black_section {
     background: black;
     min-height: 320px;
@@ -5857,7 +5860,7 @@ button.close {
     padding: 4px 0; }
     .header_section .header_contact ul li {
       font-family: "ubuntu_regular";
-      font-size: 17px;
+      font-size: 20px;
       color: white;
       font-family: "ubuntu_regular"; }
       .header_section .header_contact ul li span {
@@ -7006,6 +7009,104 @@ button.close {
         font-size: 20px; }
       .contact_page .contact_form textarea::-webkit-input-placeholder {
         font-size: 20px; } }
+.services_details h2.section_title {
+  font-family: "ubuntu_regular";
+  font-size: 60px;
+  color: #4a4a4a;
+  font-family: "UbuntuBold";
+  margin-bottom: 50px; }
+.services_details .details_content {
+  width: calc(100% - 300px);
+  float: left; }
+  .services_details .details_content .img_block {
+    height: 450px;
+    width: 350px;
+    float: left;
+    background-image: url("../images/services/our_service1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .services_details .details_content .text_section {
+    float: left;
+    width: calc(100% - 400px);
+    padding-left: 30px; }
+    .services_details .details_content .text_section p {
+      font-family: "ubuntu_regular";
+      font-size: 22px;
+      color: #4a4a4a;
+      font-weight: normal;
+      line-height: 32px;
+      letter-spacing: 1.2px;
+      margin-bottom: 30px; }
+.services_details .other_services_list {
+  width: 280px;
+  float: right; }
+  .services_details .other_services_list p {
+    font-family: "ubuntu_regular";
+    font-size: 25px;
+    color: black;
+    font-family: "UbuntuBold"; }
+  .services_details .other_services_list li {
+    line-height: 35px; }
+    .services_details .other_services_list li a {
+      font-family: "ubuntu_regular";
+      font-size: 22px;
+      color: #4a4a4a;
+      font-weight: normal;
+      line-height: 1.2px; }
+      .services_details .other_services_list li a:hover {
+        color: #993d3b; }
+.services_details .customer_images_header h2 {
+  font-family: "ubuntu_regular";
+  font-size: 52px;
+  color: black;
+  font-family: "UbuntuBold"; }
+.services_details .customer_images_header p {
+  font-family: "ubuntu_regular";
+  font-size: 22px;
+  color: #4a4a4a;
+  font-weight: normal;
+  line-height: 32px;
+  letter-spacing: 1.2px; }
+.services_details .view_img_btn {
+  font-family: "ubuntu_regular";
+  font-size: 28px;
+  color: white;
+  font-family: "UbuntuBold";
+  background: black;
+  display: table;
+  margin: 25px auto;
+  padding: 20px 53px;
+  border-bottom: 5px solid #d1543c; }
+  .services_details .view_img_btn:hover {
+    background: #d1543c;
+    border-bottom-color: black; }
+
+.full_narrow_block {
+  border-bottom: 10px solid #4a4a4a;
+  margin: 100px 0; }
+  .full_narrow_block .left_block {
+    background-image: url("../images/narrow_block_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    float: left;
+    padding: 45px;
+    position: relative;
+    min-height: 185px; }
+    .full_narrow_block .left_block p {
+      font-family: "ubuntu_regular";
+      font-size: 22px;
+      color: #4a4a4a;
+      font-weight: normal;
+      line-height: 32px; }
+  .full_narrow_block .right_block {
+    width: 40%;
+    float: left;
+    background: #8f2b29;
+    min-height: 185px;
+    padding: 40px 0 40px 70px; }
+
 .home_footer {
   padding: 35px 0 50px 0;
   background: #150605; }
@@ -7082,7 +7183,7 @@ body {
   font-family: "ubuntu_regular"; }
 
 .wrapper {
-  max-width: 1370px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px; }
 
@@ -7143,5 +7244,24 @@ textarea {
 
 input:focus, textarea:focus {
   outline: none; }
+
+.contact_button {
+  background: #d1543c;
+  display: inline-block;
+  color: white;
+  padding: 20px 30px;
+  border-bottom: 4px solid white; }
+  .contact_button span {
+    display: block;
+    text-align: center; }
+    .contact_button span:first-child {
+      font-size: 28px;
+      font-family: "UbuntuBold"; }
+    .contact_button span:last-child {
+      font-size: 24px;
+      margin-top: 10px; }
+  .contact_button:hover {
+    background: #b03f2a;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
