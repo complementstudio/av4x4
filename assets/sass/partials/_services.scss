@@ -26,18 +26,8 @@
     background-position: center;
     position: relative;
     margin:1.5%;
-    &.service1{
-      @include background('../images/services/our_service1.jpg',no-repeat,cover);
-    }
-    &.service2{
-      @include background('../images/services/our_service2.jpg',no-repeat,cover);
-    }
-    &.service3{
-      @include background('../images/services/our_service3.jpg',no-repeat,cover);
-    }
-    &.service4{
-      @include background('../images/services/our_service4.jpg',no-repeat,cover);
-    }
+    background-size:cover;
+    background-repeat: no-repeat;
     @media (max-width: 1000px){
       width: 47%;
     }
