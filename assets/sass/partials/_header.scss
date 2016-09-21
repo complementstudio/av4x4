@@ -220,6 +220,28 @@
       background: darken($button_main_color,10%);
     }
   }
+  .header_meet_crew{
+    overflow: hidden;
+    .wrapper{
+      position: relative;
+    }
+    .text_block{
+      max-width: 620px;
+      float: left;
+      margin: 110px 0 70px 0;
+      h2{
+        @include font-source(72px,$white);
+        font-family: $bold-font;
+      }
+      p{
+        @include font-source(22px,$white,normal,32px,1.2px);
+        width: 90%;
+      }
+    }
+    img{
+      @include position_absolute(absolute,inherit,inherit,inherit,inherit);
+    }
+  }
 }
 @media  (max-width: 1400px){
   .header_section

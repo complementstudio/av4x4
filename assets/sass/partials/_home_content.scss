@@ -17,11 +17,14 @@
   }
   .text_small_blocks{
     background-color: $light_grey;
-    background-size: contain;
+    //background-size: contain;
     width: 48%;
     float: left;
     margin-right: 30px;
     margin-top: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     &:last-child{
       margin-right: 0;
     }
@@ -32,6 +35,7 @@
       width: 400px;
       float: right;
       min-height: 260px;
+
       &:hover{
         background: $grey_text;
       }
@@ -45,24 +49,6 @@
         font-size: 20px;
         font-family: $regular-font;
       }
-    }
-    &.service_block1{
-      @include background('../images/services/Bumpers&RollCages1.jpg',no-repeat,cover);
-    }
-    &.service_block2{
-      @include background('../images/services/Bumpers&RollCages3.jpg',no-repeat,cover);
-    }
-    &.service_block3{
-      @include background('../images/services/Bumpers&RollCages4.jpg',no-repeat,cover);
-    }
-    &.service_block4{
-      @include background('../images/services/Bumpers&RollCages5.jpg',no-repeat,cover);
-    }
-    &.service_block5{
-      @include background('../images/services/Bumpers&RollCages6.jpg',no-repeat,cover);
-    }
-    &.service_block6{
-      @include background('../images/services/Bumpers&RollCages7.jpg',no-repeat,cover);
     }
   }
   .home_small_title{
