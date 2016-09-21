@@ -6547,16 +6547,6 @@ button.close {
       font-size: 26px !important; }
     .text_small_blocks .text_content p {
       font-size: 15px !important; } }
-@media (max-width: 1350px) {
-  .home_content .home_footer .first_block {
-    width: 100%; }
-    .home_content .home_footer .first_block ul {
-      margin-right: 0 !important;
-      width: 33% !important; }
-  .home_content .home_footer .second_block {
-    width: 33% !important; }
-  .home_content .home_footer .last_block {
-    width: 33% !important; } }
 @media (max-width: 1200px) {
   .home_content .pakages_info_block a {
     font-size: 20px !important; }
@@ -6631,25 +6621,6 @@ button.close {
     font-size: 18px !important;
     word-break: break-all; } }
 @media (max-width: 700px) {
-  .home_content .home_footer p {
-    text-align: center;
-    font-size: 16px !important; }
-  .home_content .home_footer ul li a {
-    font-size: 14px !important; }
-  .home_content .home_footer .first_block {
-    width: 100%; }
-    .home_content .home_footer .first_block ul {
-      margin-right: 0 !important;
-      width: 100% !important;
-      text-align: center; }
-  .home_content .home_footer .second_block {
-    width: 100% !important;
-    text-align: center; }
-  .home_content .home_footer .last_block {
-    width: 100% !important;
-    text-align: center; }
-  .home_content .home_footer ul.social_icons_btn {
-    float: none !important; }
   .home_content .work_img_block a {
     padding: 15% 0 !important; }
 
@@ -6704,23 +6675,9 @@ button.close {
   min-height: 400px;
   background-position: center;
   position: relative;
-  margin: 1.5%; }
-  .our_services_block .services_blocks.service1 {
-    background-image: url("../images/services/our_service1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .our_services_block .services_blocks.service2 {
-    background-image: url("../images/services/our_service2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .our_services_block .services_blocks.service3 {
-    background-image: url("../images/services/our_service3.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .our_services_block .services_blocks.service4 {
-    background-image: url("../images/services/our_service4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat; }
+  margin: 1.5%;
+  background-size: cover;
+  background-repeat: no-repeat; }
   @media (max-width: 1000px) {
     .our_services_block .services_blocks {
       width: 47%; } }
@@ -7181,6 +7138,36 @@ button.close {
         font-size: 14px;
         color: #69b8a6; }
 
+@media (max-width: 1350px) {
+  .home_footer .first_block {
+    width: 100% !important; }
+    .home_footer .first_block ul {
+      margin-right: 0 !important;
+      width: 33% !important; }
+  .home_footer .second_block {
+    width: 33% !important; }
+  .home_footer .last_block {
+    width: 33% !important; } }
+@media (max-width: 700px) {
+  .home_footer p {
+    text-align: center;
+    font-size: 16px !important; }
+  .home_footer ul li a {
+    font-size: 14px !important; }
+  .home_footer .first_block {
+    width: 100%; }
+    .home_footer .first_block ul {
+      margin-right: 0 !important;
+      width: 100% !important;
+      text-align: center; }
+  .home_footer .second_block {
+    width: 100% !important;
+    text-align: center; }
+  .home_footer .last_block {
+    width: 100% !important;
+    text-align: center; }
+  .home_footer ul.social_icons_btn {
+    float: none !important; } }
 body {
   font-family: "ubuntu_regular"; }
 
