@@ -24,6 +24,10 @@
   }
 }
 .header_section{
+  .chat_below_link{
+    color: $active_menu_color;
+    text-decoration: underline!important;
+  }
   .header_black_section{
     background: $black;
     min-height: 320px;
@@ -50,7 +54,7 @@
     @include padding-two-param(4px,0);
     ul{
       li{
-        @include font-source(17px,$white);
+        @include font-source(20px,$white);
         font-family: $regular-font;
         span{
           color: $button_main_color;

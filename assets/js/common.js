@@ -32,3 +32,6 @@ $( window ).resize(function() {
 });
 var pakages_section_left_height = $('.view_pakages_section .left_block').outerHeight();
 $('.view_pakages_section .right_block').css('height', pakages_section_left_height);
+
+var narrow_block_left_height = $('.full_narrow_block .left_block').outerHeight();
+$('.full_narrow_block .right_block').css('height', narrow_block_left_height);
