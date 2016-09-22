@@ -413,14 +413,23 @@
         background: rgba($orange_bg,0.8);
         opacity: 0;
         @include padding-two-param(32%,0);
+        width: 0;
+        display: block;
+        @include transition(all linear 0.5s);
         span{
           display: block;
           @include font-source(23px,$white);
           font-family: $bold-font;
           text-align: center;
+          opacity: 0;
         }
       }
       &:hover a{
+        opacity: 1;
+        width: 100%;
+        @include transition(all linear 0.5s);
+      }
+      &:hover a span{
         opacity: 1;
       }
     }

@@ -171,29 +171,32 @@
     @include position_absolute(absolute,inherit,inherit,0,inherit);
     border-bottom: 5px solid #926204;
     .black_section{
-      background: url("../images/header_bottom_bg.png") no-repeat;
-      @include padding-two-param(23px,0);
-      background-size: 60% 100%;
-      min-height: 210px;
+      //background-size: 60% 100%;
+      //min-height: 210px;
       .text_section{
         width: 60%;
         float: left;
+        min-height: 190px;
+        background-size: cover;
+        @include padding-two-param(23px,30px);
+        //background: url("../images/header_bottom_bg.png") no-repeat;
         p{
           color: $white;
           font-size: 22px;
-          //width: 80%;
+          width: 80%;
+          float: right;
           span{
             font-family: $bold-font;
           }
         }
       }
       .button_section{
-        width: 41%;
+        width: 40%;
         float: left;
         @include padding-two-param(24px,30px);
         @include position_absolute(absolute,0,0,inherit,inherit);
         background: $orange_bg;
-        min-height: 210px;
+        //min-height: 210px;
         line-height: 24px;
       }
     }
@@ -256,6 +259,7 @@
     }
     img{
       @include position_absolute(absolute,95px,-100px,0,inherit);
+      max-width: 950px;
       @media screen and (max-width: 1500px){
        max-width: 650px;
         right: 0;
@@ -411,10 +415,11 @@
     }
     .header_bottom_section {
       .black_section {
-        min-height: 330px;
-        background-size: cover;
+        //min-height: 330px;
+        //background-size: cover;
         .text_section {
           width: 100%;
+          height: inherit!important;
           margin-top: 150px;
          p{
            font-size: 14px!important;
@@ -422,7 +427,7 @@
         }
         .button_section {
           width: 100%;
-          min-height: 150px;
+          height: inherit!important;
         }
       }
     }
@@ -442,6 +447,9 @@
     }
     img.header_logo{
       top: 40px!important;
+    }
+    .header_black_section{
+      min-height: 180px;
     }
   }
 }

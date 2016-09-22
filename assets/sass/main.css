@@ -5971,31 +5971,30 @@ button.close {
     bottom: 0;
     left: inherit;
     border-bottom: 5px solid #926204; }
-    .header_section .header_bottom_section .black_section {
-      background: url("../images/header_bottom_bg.png") no-repeat;
-      padding: 23px 0;
-      background-size: 60% 100%;
-      min-height: 210px; }
-      .header_section .header_bottom_section .black_section .text_section {
-        width: 60%;
-        float: left; }
-        .header_section .header_bottom_section .black_section .text_section p {
-          color: white;
-          font-size: 22px; }
-          .header_section .header_bottom_section .black_section .text_section p span {
-            font-family: "UbuntuBold"; }
-      .header_section .header_bottom_section .black_section .button_section {
-        width: 41%;
-        float: left;
-        padding: 24px 30px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: inherit;
-        left: inherit;
-        background: #8f2b29;
-        min-height: 210px;
-        line-height: 24px; }
+    .header_section .header_bottom_section .black_section .text_section {
+      width: 60%;
+      float: left;
+      min-height: 190px;
+      background-size: cover;
+      padding: 23px 30px; }
+      .header_section .header_bottom_section .black_section .text_section p {
+        color: white;
+        font-size: 22px;
+        width: 80%;
+        float: right; }
+        .header_section .header_bottom_section .black_section .text_section p span {
+          font-family: "UbuntuBold"; }
+    .header_section .header_bottom_section .black_section .button_section {
+      width: 40%;
+      float: left;
+      padding: 24px 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: inherit;
+      left: inherit;
+      background: #8f2b29;
+      line-height: 24px; }
   .header_section .contact_button {
     background: #d1543c;
     display: inline-block;
@@ -6057,7 +6056,8 @@ button.close {
       top: 95px;
       right: -100px;
       bottom: 0;
-      left: inherit; }
+      left: inherit;
+      max-width: 950px; }
       @media screen and (max-width: 1500px) {
         .header_section .header_meet_crew img {
           max-width: 650px;
@@ -6148,17 +6148,15 @@ button.close {
     font-size: 46px;
     padding-bottom: 50px;
     line-height: 55px; }
-  .header_section .header_bottom_section .black_section {
-    min-height: 330px;
-    background-size: cover; }
-    .header_section .header_bottom_section .black_section .text_section {
-      width: 100%;
-      margin-top: 150px; }
-      .header_section .header_bottom_section .black_section .text_section p {
-        font-size: 14px !important; }
-    .header_section .header_bottom_section .black_section .button_section {
-      width: 100%;
-      min-height: 150px; }
+  .header_section .header_bottom_section .black_section .text_section {
+    width: 100%;
+    height: inherit !important;
+    margin-top: 150px; }
+    .header_section .header_bottom_section .black_section .text_section p {
+      font-size: 14px !important; }
+  .header_section .header_bottom_section .black_section .button_section {
+    width: 100%;
+    height: inherit !important; }
   .header_section .header_contact ul {
     text-align: right; }
     .header_section .header_contact ul li:first-child, .header_section .header_contact ul li:nth-child(2) {
@@ -6167,7 +6165,9 @@ button.close {
   .header_section ul.main_menu {
     top: 156px !important; }
   .header_section img.header_logo {
-    top: 40px !important; } }
+    top: 40px !important; }
+  .header_section .header_black_section {
+    min-height: 180px; } }
 @media screen and (max-width: 600px) {
   .header_section .header_meet_crew img {
     width: 100%; } }
@@ -6567,15 +6567,31 @@ button.close {
         left: 0;
         background: rgba(143, 43, 41, 0.8);
         opacity: 0;
-        padding: 32% 0; }
+        padding: 32% 0;
+        width: 0;
+        display: block;
+        -webkit-transition: all linear 0.5s;
+        -moz-transition: all linear 0.5s;
+        -ms-transition: all linear 0.5s;
+        -o-transition: all linear 0.5s;
+        transition: all linear 0.5s; }
         .home_content .recent_work_section .work_img_block a span {
           display: block;
           font-family: "ubuntu_regular";
           font-size: 23px;
           color: white;
           font-family: "UbuntuBold";
-          text-align: center; }
+          text-align: center;
+          opacity: 0; }
       .home_content .recent_work_section .work_img_block:hover a {
+        opacity: 1;
+        width: 100%;
+        -webkit-transition: all linear 0.5s;
+        -moz-transition: all linear 0.5s;
+        -ms-transition: all linear 0.5s;
+        -o-transition: all linear 0.5s;
+        transition: all linear 0.5s; }
+      .home_content .recent_work_section .work_img_block:hover a span {
         opacity: 1; }
 
 @media (max-width: 1400px) {
@@ -7460,6 +7476,140 @@ button.close {
       margin-left: 0; }
     .customer_review_page .review_block:last-child {
       margin-bottom: 50px; } }
+.customer_gallery .customer_gallery_title {
+  font-family: "ubuntu_regular";
+  font-size: 50px;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+  font-family: "UbuntuBold"; }
+.customer_gallery .thumbnail_slider_block {
+  width: 60%;
+  float: left; }
+  .customer_gallery .thumbnail_slider_block .flexslider {
+    margin: 0 0 30px !important; }
+.customer_gallery .thumbnail_slider_text {
+  width: 40%;
+  float: left;
+  padding-left: 50px; }
+  .customer_gallery .thumbnail_slider_text h2 {
+    font-family: "ubuntu_regular";
+    font-size: 35px;
+    color: #4a4a4a;
+    letter-spacing: 0.1px;
+    font-family: "UbuntuBold"; }
+  .customer_gallery .thumbnail_slider_text h3 {
+    font-family: "ubuntu_regular";
+    font-size: 25px;
+    color: #4a4a4a;
+    letter-spacing: 0.1px;
+    font-family: "UbuntuBold";
+    margin-bottom: 0; }
+  .customer_gallery .thumbnail_slider_text p {
+    font-family: "ubuntu_regular";
+    font-size: 22px;
+    color: #4a4a4a;
+    font-weight: normal;
+    line-height: 32px;
+    letter-spacing: 1.2px; }
+  .customer_gallery .thumbnail_slider_text ul.parts_list {
+    margin-top: 15px; }
+    .customer_gallery .thumbnail_slider_text ul.parts_list li {
+      padding: 0; }
+      .customer_gallery .thumbnail_slider_text ul.parts_list li a {
+        font-family: "ubuntu_regular";
+        font-size: 22px;
+        color: #d1543c;
+        font-weight: normal;
+        line-height: 32px;
+        letter-spacing: 1.2px; }
+  .customer_gallery .thumbnail_slider_text ul.brends_list {
+    margin: 15px 0 0 0; }
+    .customer_gallery .thumbnail_slider_text ul.brends_list li {
+      margin-right: 17px;
+      padding: 0; }
+      .customer_gallery .thumbnail_slider_text ul.brends_list li a {
+        width: 110px;
+        height: 75px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block; }
+      .customer_gallery .thumbnail_slider_text ul.brends_list li:last-child {
+        margin-right: 0; }
+.customer_gallery .other_sliders_section {
+  margin: 30px 0 300px 0;
+  width: 100%;
+  float: left; }
+  .customer_gallery .other_sliders_section h2 {
+    font-family: "ubuntu_regular";
+    font-size: 30px;
+    color: #4a4a4a;
+    font-family: "UbuntuBold";
+    margin-bottom: 40px; }
+  .customer_gallery .other_sliders_section .other_slider_block {
+    width: 25%;
+    float: left;
+    height: 265px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .customer_gallery .other_sliders_section .other_slider_block a {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(143, 43, 41, 0.8);
+      opacity: 0;
+      width: 0; }
+      .customer_gallery .other_sliders_section .other_slider_block a:hover a {
+        opacity: 1;
+        width: 100%; }
+@media screen and (max-width: 1100px) {
+  .customer_gallery .customer_gallery .thumbnail_slider_block {
+    width: 65%;
+    float: none;
+    margin: 0 auto; }
+  .customer_gallery .customer_gallery .thumbnail_slider_text {
+    width: 100%;
+    padding-left: 0; } }
+@media screen and (max-width: 900px) {
+  .customer_gallery .customer_gallery .other_sliders_section .other_slider_block {
+    width: 50%; } }
+@media screen and (max-width: 767px) {
+  .customer_gallery .customer_gallery .other_sliders_section {
+    margin: 30px 0 30px 0; }
+  .customer_gallery .customer_gallery .customer_gallery_title {
+    font-size: 30px; }
+  .customer_gallery .customer_gallery .thumbnail_slider_block {
+    width: 85%; }
+  .customer_gallery .customer_gallery .thumbnail_slider_text h2 {
+    font-size: 20px; }
+  .customer_gallery .customer_gallery .thumbnail_slider_text h3 {
+    font-size: 18px; }
+  .customer_gallery .customer_gallery .thumbnail_slider_text p {
+    font-family: "ubuntu_regular";
+    font-size: 16px;
+    color: #4a4a4a;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 1px; }
+  .customer_gallery .customer_gallery .thumbnail_slider_text ul.parts_list li a {
+    font-family: "ubuntu_regular";
+    font-size: 16px;
+    color: #d1543c;
+    font-weight: normal;
+    line-height: 25px;
+    letter-spacing: 1px; } }
+@media screen and (max-width: 500px) {
+  .customer_gallery .customer_gallery .other_sliders_section .other_slider_block {
+    width: 100%; }
+  .customer_gallery .customer_gallery .thumbnail_slider_block {
+    width: 100%; }
+  .customer_gallery .customer_gallery .customer_gallery_title, .customer_gallery .customer_gallery .other_sliders_section h2 {
+    font-size: 25px; } }
+
 .home_footer {
   padding: 35px 0 50px 0;
   background: #150605; }
