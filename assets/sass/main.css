@@ -7563,39 +7563,40 @@ button.close {
       background: rgba(143, 43, 41, 0.8);
       opacity: 0;
       width: 0; }
-      .customer_gallery .other_sliders_section .other_slider_block a:hover a {
-        opacity: 1;
-        width: 100%; }
+    .customer_gallery .other_sliders_section .other_slider_block:hover a {
+      opacity: 1;
+      width: 100%; }
+
 @media screen and (max-width: 1100px) {
-  .customer_gallery .customer_gallery .thumbnail_slider_block {
+  .customer_gallery .thumbnail_slider_block {
     width: 65%;
     float: none;
     margin: 0 auto; }
-  .customer_gallery .customer_gallery .thumbnail_slider_text {
+  .customer_gallery .thumbnail_slider_text {
     width: 100%;
     padding-left: 0; } }
 @media screen and (max-width: 900px) {
-  .customer_gallery .customer_gallery .other_sliders_section .other_slider_block {
+  .customer_gallery .other_sliders_section .other_slider_block {
     width: 50%; } }
 @media screen and (max-width: 767px) {
-  .customer_gallery .customer_gallery .other_sliders_section {
+  .customer_gallery .other_sliders_section {
     margin: 30px 0 30px 0; }
-  .customer_gallery .customer_gallery .customer_gallery_title {
+  .customer_gallery .customer_gallery_title {
     font-size: 30px; }
-  .customer_gallery .customer_gallery .thumbnail_slider_block {
+  .customer_gallery .thumbnail_slider_block {
     width: 85%; }
-  .customer_gallery .customer_gallery .thumbnail_slider_text h2 {
+  .customer_gallery .thumbnail_slider_text h2 {
     font-size: 20px; }
-  .customer_gallery .customer_gallery .thumbnail_slider_text h3 {
+  .customer_gallery .thumbnail_slider_text h3 {
     font-size: 18px; }
-  .customer_gallery .customer_gallery .thumbnail_slider_text p {
+  .customer_gallery .thumbnail_slider_text p {
     font-family: "ubuntu_regular";
     font-size: 16px;
     color: #4a4a4a;
     font-weight: normal;
     line-height: 25px;
     letter-spacing: 1px; }
-  .customer_gallery .customer_gallery .thumbnail_slider_text ul.parts_list li a {
+  .customer_gallery .thumbnail_slider_text ul.parts_list li a {
     font-family: "ubuntu_regular";
     font-size: 16px;
     color: #d1543c;
@@ -7603,13 +7604,12 @@ button.close {
     line-height: 25px;
     letter-spacing: 1px; } }
 @media screen and (max-width: 500px) {
-  .customer_gallery .customer_gallery .other_sliders_section .other_slider_block {
+  .customer_gallery .other_sliders_section .other_slider_block {
     width: 100%; }
-  .customer_gallery .customer_gallery .thumbnail_slider_block {
+  .customer_gallery .thumbnail_slider_block {
     width: 100%; }
-  .customer_gallery .customer_gallery .customer_gallery_title, .customer_gallery .customer_gallery .other_sliders_section h2 {
+  .customer_gallery .customer_gallery_title, .customer_gallery .other_sliders_section h2 {
     font-size: 25px; } }
-
 .home_footer {
   padding: 35px 0 50px 0;
   background: #150605; }
