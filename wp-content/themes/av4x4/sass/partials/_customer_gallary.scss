@@ -1,0 +1,153 @@
+.customer_gallery {
+  .customer_gallery_title {
+    @include font-source(50px, $grey_text);
+    margin-bottom: 40px;
+    font-family: $bold-font;
+  }
+  .thumbnail_slider_block {
+    width: 60%;
+    float: left;
+    .flexslider {
+      margin: 0 0 30px !important;
+    }
+  }
+  .thumbnail_slider_text {
+    width: 40%;
+    float: left;
+    padding-left: 50px;
+    h2 {
+      @include font-source(35px, $grey_text);
+      letter-spacing: 0.1px;
+      font-family: $bold-font;
+    }
+    h3 {
+      @include font-source(25px, $grey_text);
+      letter-spacing: 0.1px;
+      font-family: $bold-font;
+      margin-bottom: 0;
+    }
+    p {
+      @include font-source(22px, $grey_text, normal, 32px, 1.2px);
+    }
+    ul.parts_list {
+      margin-top: 15px;
+      li {
+        padding: 0;
+        a {
+          @include font-source(22px, $button_main_color, normal, 32px, 1.2px);
+        }
+      }
+    }
+    ul.brends_list {
+      margin: 15px 0 0 0;
+      li {
+        margin-right: 17px;
+        padding: 0;
+        a {
+          width: 110px;
+          height: 75px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: block;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .other_sliders_section {
+    margin: 30px 0 300px 0;
+    width: 100%;
+    float: left;
+    h2 {
+      @include font-source(30px, $grey_text);
+      font-family: $bold-font;
+      margin-bottom: 40px;
+    }
+    .other_slider_block {
+      width: 25%;
+      float: left;
+      height: 265px;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      a {
+        @include position_absolute(absolute, 0, 0, 0, 0);
+        background: rgba(143, 43, 41, 0.8);
+        opacity: 0;
+        width: 0;
+      }
+      &:hover a {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px){
+  .customer_gallery {
+    .thumbnail_slider_block{
+      width: 65%;
+      float: none;
+      margin: 0 auto;
+    }
+    .thumbnail_slider_text{
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}
+@media screen and (max-width: 900px){
+  .customer_gallery {
+    .other_sliders_section{
+      .other_slider_block{
+        width: 50%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px){
+  .customer_gallery {
+    .other_sliders_section {
+      margin: 30px 0 30px 0;
+    }
+    .customer_gallery_title{
+      font-size: 30px;
+    }
+    .thumbnail_slider_block{
+      width: 85%;
+    }
+    .thumbnail_slider_text {
+      h2 {
+        font-size: 20px;
+      }
+      h3{
+        font-size: 18px;
+      }
+      p{
+        @include font-source(16px,$grey_text,normal,25px,1px);
+      }
+      ul.parts_list li a{
+        @include font-source(16px,$button_main_color,normal,25px,1px);
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .customer_gallery {
+    .other_sliders_section {
+      .other_slider_block {
+        width: 100%;
+      }
+    }
+    .thumbnail_slider_block {
+      width: 100%;
+    }
+    .customer_gallery_title, .other_sliders_section h2 {
+      font-size: 25px;
+    }
+  }
+}

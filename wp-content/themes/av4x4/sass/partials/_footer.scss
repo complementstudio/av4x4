@@ -1,0 +1,137 @@
+.home_footer{
+  @include padding(35px,0,50px,0);
+  background: $footer-bg;
+  .footer_wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    @include padding-two-param(0,15px);
+    p{
+      @include font-source(20px,$light_grey);
+      font-family: $bold-font;
+    }
+    ul.footer_menu{
+      margin-bottom: 20px!important;
+      li{
+        a{
+          @include font-source(16px,$footer-menu-color,600,1.75);
+          //font-family: $bold-font;
+          &:hover{
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+  .first_block{
+    width: 37%;
+    float: left;
+    ul{
+      float: left;
+      margin-right: 10%;
+    }
+  }
+  .second_block,.last_block{
+    width: 21%;
+    float: left;
+  }
+  .last_block{
+    ul.social_icons_btn{
+      float: left;
+      background: $button_main_color;
+      @include padding-two-param(1px,10px);
+      @include font-source(16px,$light_grey);
+      margin-bottom: 15px!important;
+      li{
+        a{
+          @include font-source(20px,$light_grey);
+        }
+      }
+    }
+    ul.contacts{
+      li{
+        @include font-source(13px,$light_grey);
+      }
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+}
+.bottom_footer{
+  @include padding(25px,15px,160px,15px);
+  p{
+    text-align: center;
+    @include font-source(16px,$gray);
+    a{
+      color: $gray;
+    }
+  }
+  ul{
+    text-align: center;
+    li{
+      padding: 0;
+      &:first-child{
+        @include font-source(16px,$black);
+      }
+      &:last-child a{
+        @include font-source(14px,#69b8a6);
+
+      }
+    }
+  }
+}
+@media (max-width: 1350px){
+  //.home_content
+  //{
+  .home_footer
+  {
+    .first_block{
+      width: 100%!important;
+      ul{
+        margin-right: 0!important;
+        width: 33%!important;
+      }
+    }
+    .second_block {
+      width: 33%!important;
+    }
+    .last_block{
+      width: 33%!important;
+    }
+  }
+
+}
+@media (max-width: 700px) {
+  .home_footer {
+    p {
+      text-align: center;
+      font-size: 16px !important;
+    }
+    ul {
+      li {
+        a {
+          font-size: 14px !important;
+        }
+      }
+    }
+    .first_block {
+      width: 100%;
+      ul {
+        margin-right: 0 !important;
+        width: 100% !important;
+        text-align: center;
+      }
+    }
+    .second_block {
+      width: 100% !important;
+      text-align: center;
+    }
+    .last_block {
+      width: 100% !important;
+      text-align: center;
+    }
+    ul.social_icons_btn {
+      float: none !important;
+    }
+  }
+}
