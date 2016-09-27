@@ -68,9 +68,44 @@ function feedback()
         'menu_position' => null,
         'supports' => array('title', 'editor','thumbnail')
     );
-    register_post_type('concert', $args);
+    register_post_type('feedback', $args);
 }
 add_action('init', 'feedback');
+
+function custom_reviews()
+{
+    $labels = array(
+        'name' => 'Custom Reviews',
+        'singular_name' => 'Custom Reviews',
+        'add_new' => 'Add new',
+        'add_new_item' => 'Add new Custom Reviews',
+        'edit_item' => 'Edit Custom Reviews',
+        'new_item' => 'New Custom Reviews',
+        'view_item' => 'See Custom Reviews',
+        'search_items' => 'Search Custom Reviews',
+        'not_found' => 'No results',
+        'not_found_in_trash' => 'No results',
+        'parent_item_colon' => '',
+        'menu_name' => 'Custom Reviews'
+
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'has_archive' => true,
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array('title', 'editor','thumbnail')
+    );
+    register_post_type('concert', $args);
+}
+add_action('init', 'custom_reviews');
 
 
 add_theme_support('post-thumbnails');

@@ -7,50 +7,48 @@
  * @since av4x4 1.0
  */
 
-get_header(); ?>
+get_header();
 
-    <div id="main-content" class="main-content">
+?>
+<?php if ( function_exists( 'get_field' ) ) : ?>
 
+    <?php
 
-        <div id="primary" class="content-area">
-            <div id="content" class="site-content" role="main">
-                <?php
-                // Start the Loop.
-                while ( have_posts() ) : the_post();
-                    ?>
+    $contact_us_title         = get_field( 'contact_us_title', get_the_ID() );
+    $contact_us_description   = get_field( 'contact_us_description', get_the_ID() );
+    $contact_us_images   = get_field( 'contact_us_images', get_the_ID() );
+    $contact_us_address       = get_field( 'contact_us_address', get_the_ID() );
+    $contact_form_7_code       = get_field( 'contact_form_7_code', get_the_ID() );
+    ?>
 
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <?php
-                        // Page thumbnail and title.
-                        the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' );
-                        ?>
+    <div class="contact_page clearfix">
+        <div class="wrapper">
+            <div class=" header_section">
+                <h2><?=$contact_us_title;?></h2>
+                <p>
+                    <?=$contact_us_description;?>
+                </p>
+            </div>
+            <div class="contact_images_block clearfix">
+                <div class="img_block">
 
-                        <div class="entry-content">
-                            <?php
-                            the_content();
-                            wp_link_pages( array(
-                                'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfourteen' ) . '</span>',
-                                'after'       => '</div>',
-                                'link_before' => '<span>',
-                                'link_after'  => '</span>',
-                            ) );
+                </div>
+                <div class="img_block">
 
-                            edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );
-                            ?>
-                        </div><!-- .entry-content -->
-                    </article><!-- #post-## -->
+                </div>
+                <div class="img_block">
 
+                </div>
+                <div class="img_block">
 
-                    <?php
-                    // If comments are open or we have at least one comment, load up the comment template.
-                    if ( comments_open() || get_comments_number() ) {
-                        comments_template();
-                    }
-                endwhile;
-                ?>
-            </div><!-- #content -->
-        </div><!-- #primary -->
-    </div><!-- #main-content -->
-
+                </div>
+            </div>
+            <div class="shop_info">
+           <?=$contact_us_address?>
+            </div>
+     <?=do_shortcode($contact_form_7_code)?>
+        </div>
+    </div>
 <?php
+    endif;
 get_footer();

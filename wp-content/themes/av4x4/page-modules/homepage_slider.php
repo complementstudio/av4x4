@@ -16,7 +16,7 @@
     $team_button_text   = get_field( 'team_button_text', get_the_ID() );
     $team_content       = get_field( 'team_content', get_the_ID() );
     ?>
-    <div class="header_slider">
+    <div class="header_slider"  style="position: absolute;top: 0;right: 0;left: 0">
         <?php foreach($slider_items as $slider_item) : ?>
             <div class="home_slider" style="background-image:url(<?=$slider_item['slider_item_image']?>);background-size: cover;background-repeat: no-repeat;"></div>
         <?php endforeach; ?>

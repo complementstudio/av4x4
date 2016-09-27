@@ -23,9 +23,9 @@
 		get_template_part( 'page-modules/homepage_slider' );
 	}
 ?>
-<div style="position: absolute;top: 0;right: 0;left: 0">
+<div>
 	<div class="header_section clearfix">
-		<div class="header_bg clearfix">
+		<div class="<?=(is_front_page()) ? 'header_bg' : ''?> clearfix">
 
 
 			<div class="clearfix header_contact">
@@ -45,7 +45,9 @@
 			<?php endif; ?>
 			<div class="header_menu clearfix">
 				<div class="wrapper">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/header_logo.png" alt="logo" class="header_logo">
+					<a href="<?=get_home_url()?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/header_logo.png" alt="logo" class="header_logo">
+					</a>
 					<span class="header_toggle_icon"><i class="ion-navicon"></i></span>
 
 					<?php
