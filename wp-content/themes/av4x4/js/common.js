@@ -40,3 +40,21 @@ jQuery('.full_narrow_block .right_block').css('height', narrow_block_left_height
 
 var header_text_block_height = jQuery('.header_bottom_section .text_section').outerHeight();
 jQuery('.header_bottom_section .button_section').css('height', header_text_block_height);
+
+jQuery('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 170,
+    itemMargin: 20,
+    asNavFor: '#slider'
+});
+
+jQuery('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+});

@@ -7,6 +7,11 @@
  * @subpackage av4x4
  * @since av4x4 1.0
  */
+global $wpdb;
+$table_name = $wpdb->prefix . "av4x4_settings";
+$query = "SELECT * FROM {$table_name} LIMIT 1";
+$results = $wpdb->get_results( $query );
+$data = json_decode($results[0]->settings);
 ?>
 <div class="home_footer clearfix">
 	<div class="footer_wrapper">
@@ -151,7 +156,13 @@
 				]
 			}
 		];
-		var myCenter = new google.maps.LatLng(43.6110757,-116.3786824);
+		var map_lat = "<?=$data->map_lat?>";
+		var map_lng = "<?=$data->map_long?>";
+		if(!map_lat && !map_lng) {
+			map_lat = 43.6110757;
+			map_lng = -116.3786824;
+		}
+		var myCenter = new google.maps.LatLng(map_lat,map_lng);
 		var mapCanvas = document.getElementById("map");
 		var mapOptions = {center: myCenter, zoom: 16,  styles: grayStyles,scrollwheel: false};
 		var map = new google.maps.Map(mapCanvas, mapOptions);
