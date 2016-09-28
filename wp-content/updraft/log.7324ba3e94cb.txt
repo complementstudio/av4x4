@@ -1,0 +1,68 @@
+0000.001 (0) Opened log file at time: Wed, 28 Sep 2016 21:51:17 +0000 on http://av4x4.net
+0000.067 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.20 WP: 4.6.1 PHP: 5.6.12 (Windows NT KAREN-PC 6.2 build 9200 (Windows 8 Professional Edition) i586) MySQL: 5.6.26 WPLANG: en_US Server: Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.12 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 19M | 19.3M) multisite: N openssl: OpenSSL 1.0.1p 9 Jul 2015 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.100 (0) Free space on disk containing Updraft's temporary directory: 24111.9 MB
+0000.142 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB: 0 (schedule: daily)
+0000.209 (0) Requesting semaphore lock (f) (apparently not via scheduler)
+0000.400 (0) Set semaphore last lock (f) time to 2016-09-28 21:51:17
+0000.433 (0) Semaphore lock (f) complete
+0000.534 (0) Backup run: resumption=0, nonce=7324ba3e94cb, begun at=1475099477 (1s ago), job type=backup
+0000.661 (0) Scheduling a resumption (1) after 300 seconds (1475099778) in case this run gets aborted
+0000.808 (0) Checking if we have a zip executable available
+0000.917 (0) Creation of backups of directories: beginning
+0001.061 (0) No backup of plugins: excluded by user's options
+0001.150 (0) Beginning creation of dump of themes (split every: 25 MB)
+0001.495 (0) Total entities for the zip file: 50 directories, 577 files (0 skipped as non-modified), 49.2 MB
+0001.567 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 25 MB added on this batch (25.6 MB, 577 files batched, 82 (82) added so far); re-opening (prior size: 0 KB)
+0005.075 (0) A useful amount of data was added after this amount of zip processing: 4.6 s (normalised: 4.5 s, rate: 5715.5 KB/s)
+0005.225 (0) Performance is good - but we will not increase the amount of data we batch, as we are already at the present limit (time=4.5873529911041, normalised_time=4.4790194087591, max_time=-1, data points known=0, max_bytes=26214400)
+0005.295 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): possibly approaching split limit (4.5 MB, 4 (86) files added so far); last ratio: 0.883; re-opening (prior size: 23152 KB)
+0005.725 (0) Zip size is at/near split limit (27.1 MB / 25 MB) - bumping index (from: 0)
+0005.975 (0) Created themes zip (0) - 27776.6 KB in 4.6 s (6077 KB/s) (SHA1 checksum: af74d0e847260ba9fe12a166e440b3e9ac455816)
+0006.048 (0) Zip: backup_2016-09-29-0051_Av4x4_7324ba3e94cb-themes2.zip.tmp: 100 files added (on-disk size: 0 KB)
+0006.136 (0) Zip: backup_2016-09-29-0051_Av4x4_7324ba3e94cb-themes2.zip.tmp: 200 files added (on-disk size: 0 KB)
+0006.378 (0) Zip: backup_2016-09-29-0051_Av4x4_7324ba3e94cb-themes2.zip.tmp: 300 files added (on-disk size: 0 KB)
+0006.474 (0) Zip: backup_2016-09-29-0051_Av4x4_7324ba3e94cb-themes2.zip.tmp: 400 files added (on-disk size: 0 KB)
+0006.574 (0) Zip: backup_2016-09-29-0051_Av4x4_7324ba3e94cb-themes2.zip.tmp: 500 files added (on-disk size: 0 KB)
+0020.317 (0) Created themes zip (1) - 11575.6 KB in 14.3 s (809 KB/s) (SHA1 checksum: fb090d625be57aecdd540b6ecd9da5057c6674a4)
+0020.370 (0) No backup of uploads: excluded by user's options
+0020.454 (0) No backup of others: excluded by user's options
+0020.583 (0) Saving backup status to database (elements: 3)
+0020.650 (0) No database backup (wp) - not part of this run
+0020.684 (0) backup_2016-09-29-0051_Av4x4_7324ba3e94cb-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0020.716 (0) backup_2016-09-29-0051_Av4x4_7324ba3e94cb-themes2.zip: themes: This file has not yet been successfully uploaded: will queue
+0020.750 (0) Saving backup history. Total backup size: 38.4 MB
+0020.850 (0) Requesting upload of the files that have not yet been successfully uploaded (2)
+0020.991 (0) Cloud backup selection (1/1): none (last)
+0021.025 (0) No remote despatch: user chose no remote backup service
+0021.121 (0) Recording as successfully uploaded: backup_2016-09-29-0051_Av4x4_7324ba3e94cb-themes.zip (cc81628a55a1142313fae593a586c8eb)
+0021.358 (0) Recording as successfully uploaded: backup_2016-09-29-0051_Av4x4_7324ba3e94cb-themes2.zip (1662734a0d93934df2ab71099e9fe037)
+0021.550 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=1, retain_db=1
+0021.584 (0) Number of backup sets in history: 4; groups (db): 1
+0021.616 (0) Examining (for databases) backup set with group_id=0, nonce=7324ba3e94cb, datestamp=1475099477 (Sep 28 2016 21:51:17)
+0021.650 (0) Examining (for databases) backup set with group_id=0, nonce=10bfbb125a9a, datestamp=1475098513 (Sep 28 2016 21:35:13)
+0021.683 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0021.717 (0) Examining (for databases) backup set with group_id=0, nonce=5d56a2b5fcb7, datestamp=1475098341 (Sep 28 2016 21:32:21)
+0021.750 (0) Examining (for databases) backup set with group_id=0, nonce=569682833bb3, datestamp=1475098199 (Sep 28 2016 21:29:59)
+0021.783 (0) Number of backup sets in history: 4; groups (files): 1
+0022.167 (0) Examining (for files) backup set with nonce=7324ba3e94cb, datestamp=1475099477 (Sep 28 2016 21:51:17)
+0022.208 (0) This backup set is the backup set just made, so will not be deleted.
+0022.241 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0022.275 (0) Examining (for files) backup set with nonce=10bfbb125a9a, datestamp=1475098513 (Sep 28 2016 21:35:13)
+0022.308 (0) This backup set remains non-empty (f=0/d=1); will retain in history
+0022.342 (0) Examining (for files) backup set with nonce=5d56a2b5fcb7, datestamp=1475098341 (Sep 28 2016 21:32:21)
+0022.375 (0) themes: over retain limit (1); will delete this file entity
+0022.408 (0) Delete file: backup_2016-09-29-0032_Av4x4_5d56a2b5fcb7-themes.zip, service=none
+0022.442 (0) Deleting local copy (backup_2016-09-29-0032_Av4x4_5d56a2b5fcb7-themes.zip)
+0022.482 (0) Delete file: backup_2016-09-29-0032_Av4x4_5d56a2b5fcb7-themes2.zip, service=none
+0022.508 (0) Deleting local copy (backup_2016-09-29-0032_Av4x4_5d56a2b5fcb7-themes2.zip)
+0022.615 (0) This backup set is now empty; will remove from history
+0022.668 (0) Deleting log file (log.5d56a2b5fcb7.txt)
+0022.721 (0) Examining (for files) backup set with nonce=569682833bb3, datestamp=1475098199 (Sep 28 2016 21:29:59)
+0022.750 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0022.814 (0) Retain: saving new backup history (sets now: 3) and finishing retain operation
+0022.925 (0) Resume backup (7324ba3e94cb, 0): finish run
+0023.050 (0) Decremented the semaphore (f) by 1
+0023.191 (0) Semaphore (f) unlocked
+0023.224 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0023.325 (0) No email will/can be sent - the user has not configured an email address.
+0023.358 (0) The backup apparently succeeded and is now complete

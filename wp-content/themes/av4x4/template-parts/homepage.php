@@ -104,20 +104,8 @@ $other_posts3=[];
 
             </div>
         </div>
-        <div class="client_feedback_section clearfix">
-            <div class="feedback_wrapper">
-                <div class="img_content">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/client_img.png" alt="client image">
-                </div>
-                <div class="text_contnet">
-                    <p>“I've never had a dealer go to bat for me like these guys!  Amazing service, and I felt like my interests were of greatest importance to them.
-                        Thanks Greg!  Doing great, keep it up!”
-                    </p>
-                    <span>Jared, in Boise - 2008 GMC Acadia</span>
-                </div>
 
-            </div>
-        </div>
+        <?php echo do_shortcode("[feedback]"); ?>
         <?php get_template_part( 'page-modules/recent_work_section' );?>
 
     </div>

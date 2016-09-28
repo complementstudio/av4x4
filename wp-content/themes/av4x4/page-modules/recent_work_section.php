@@ -28,10 +28,7 @@ foreach($galery as $val){
     $galery_item_slider = get_field( 'galery_item_slider', $val->ID );
     $recent_work_section_item['image'] = $galery_item_slider[0]['galery_item_slider_image'];
 
-    foreach($galery_item_slider as $slide){
-        if($slide['galery_item_slider_main_image'] == 'yes')
-            $recent_work_section_item['image'] = $slide['galery_item_slider_image'];
-    }
+
     $recent_work_section[] = $recent_work_section_item;
 }
 ?>
@@ -48,7 +45,7 @@ foreach($galery as $val){
     </div>
     <?php foreach($recent_work_section as $val) : ?>
         <div class="work_img_block">
-            <img src="<?=$val['image']?>" alt="<?=$val['title']?>">
+            <img src="<?=$val['image']['sizes']['medium']?>" alt="<?=$val['title']?>">
             <a href="<?=$val['url']?>">
                 <span><?=$val['title']?></span>
                 <span><?=$val['subtitle']?></span>
