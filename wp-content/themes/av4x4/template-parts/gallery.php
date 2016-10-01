@@ -59,22 +59,8 @@ foreach($our_galery as $val){
                 <?php endforeach; ?>
             </div>
         </div>
-        <div class="clearfix view_pakages_section">
-            <div class="left_block">
-                <div class="clearfix">
-                    <p>We love 4x4’s and have the experience and crew to help
-                        guide you on finding the best parts and packages for your
-                        4x4.  Let our crew help you find the best fit.
-                    </p>
-                </div>
-            </div>
-            <div class="right_block" style="height: 314px;">
-                <a href="javascript:void(0)" class="contact_btn"><span>CONTACT US FOR A </span>
-                    <span>FREE CONSULTATION</span>
-                </a>
-                <p>Call us at (208) 123-4567 or chat below</p>
-            </div>
-        </div>
+
+        <?php echo do_shortcode("[sc name='Gallery']"); ?>
         <?php echo do_shortcode("[feedback]"); ?>
         <div class="slider_section clearfix">
             <div class="wrapper">

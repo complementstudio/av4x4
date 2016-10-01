@@ -45,21 +45,7 @@ $image_url_thumb = wp_get_attachment_image_src($image_id,'original', true);
 
 
 		</div>
-		<div class="full_narrow_block clearfix">
-			<div class="left_block">
-				<p>
-					We love 4x4’s and have the experience and crew to help
-					guide you on finding the best parts and packages for your 4x4.
-					Let our crew help you find the best fit.
-				</p>
-
-			</div>
-			<div class="right_block">
-				<a href="<?=get_permalink(15)?>" class="contact_button"><span>FREE 4X4 CONSULTATION</span>
-					<span>Contact Us Today!</span>
-				</a>
-			</div>
-		</div>
+		<?php echo do_shortcode('[sc name="Single service"]'); ?>
 	</div>
 <?php
 //get_sidebar( 'content' );

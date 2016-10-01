@@ -57,6 +57,11 @@
   .contact_form{
     width: 60%;
     float: left;
+    input {
+      float: left;
+      width: 100%;
+      padding: 10px;
+    }
     @media (max-width: 900px){
       width: 100%;
     }

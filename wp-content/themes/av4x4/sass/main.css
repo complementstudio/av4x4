@@ -6933,6 +6933,10 @@ button.close {
   .contact_page .contact_form {
     width: 60%;
     float: left; }
+    .contact_page .contact_form input {
+      float: left;
+      width: 100%;
+      padding: 10px; }
     @media (max-width: 900px) {
       .contact_page .contact_form {
         width: 100%; } }
@@ -7395,6 +7399,12 @@ button.close {
     width: 70%;
     margin-top: 20px; }
 
+.cst_page {
+  padding: 0px 0px 60px 0px; }
+  .cst_page .review_title h2 {
+    margin-top: 0px;
+    margin-bottom: 40px; }
+
 .customer_review_page .review_title h2 {
   font-family: "ubuntu_regular";
   font-size: 70px;
@@ -7407,7 +7417,7 @@ button.close {
   font-weight: normal;
   line-height: 32px;
   letter-spacing: 1.2px;
-  width: 70%; }
+  width: 100%; }
 .customer_review_page .review_block {
   position: relative;
   background: #e5e5e5;
@@ -7617,11 +7627,14 @@ button.close {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 15px; }
-    .home_footer .footer_wrapper p {
+    .home_footer .footer_wrapper .menu_title {
       font-family: "ubuntu_regular";
       font-size: 20px;
       color: #eaeaea;
-      font-family: "UbuntuBold"; }
+      font-family: "UbuntuBold";
+      float: left;
+      width: 100%;
+      text-transform: uppercase; }
     .home_footer .footer_wrapper ul.footer_menu {
       margin-bottom: 20px !important; }
       .home_footer .footer_wrapper ul.footer_menu li a {
@@ -7629,7 +7642,11 @@ button.close {
         font-size: 16px;
         color: #f36246;
         font-weight: 600;
-        line-height: 1.75; }
+        line-height: 1.75;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        float: left;
+        width: 100%; }
         .home_footer .footer_wrapper ul.footer_menu li a:hover {
           color: white; }
   .home_footer .first_block {
@@ -7637,28 +7654,38 @@ button.close {
     float: left; }
     .home_footer .first_block ul {
       float: left;
-      margin-right: 10%; }
+      width: 33%; }
+      .home_footer .first_block ul li {
+        width: 100%;
+        float: left;
+        margin-right: .3%; }
   .home_footer .second_block, .home_footer .last_block {
     width: 21%;
     float: left; }
-  .home_footer .last_block ul.social_icons_btn {
-    float: left;
-    background: #d1543c;
-    padding: 1px 10px;
-    font-family: "ubuntu_regular";
-    font-size: 16px;
-    color: #eaeaea;
-    margin-bottom: 15px !important; }
-    .home_footer .last_block ul.social_icons_btn li a {
+  .home_footer .last_block {
+    list-style-type: none;
+    float: right; }
+    .home_footer .last_block ul {
+      float: left; }
+    .home_footer .last_block ul.social_icons_btn {
+      float: left;
+      background: #d1543c;
+      padding: 1px 10px;
       font-family: "ubuntu_regular";
-      font-size: 20px;
+      font-size: 16px;
+      color: #eaeaea;
+      margin-bottom: 15px !important;
+      margin-left: 10px; }
+      .home_footer .last_block ul.social_icons_btn li a {
+        font-family: "ubuntu_regular";
+        font-size: 20px;
+        color: #eaeaea; }
+    .home_footer .last_block ul.contacts li {
+      font-family: "ubuntu_regular";
+      font-size: 13px;
       color: #eaeaea; }
-  .home_footer .last_block ul.contacts li {
-    font-family: "ubuntu_regular";
-    font-size: 13px;
-    color: #eaeaea; }
-  .home_footer .last_block p {
-    font-size: 18px; }
+    .home_footer .last_block p {
+      font-size: 18px; }
 
 .bottom_footer {
   padding: 25px 15px 160px 15px; }
@@ -7686,8 +7713,7 @@ button.close {
   .home_footer .first_block {
     width: 100% !important; }
     .home_footer .first_block ul {
-      margin-right: 0 !important;
-      width: 33% !important; }
+      margin-right: 0 !important; }
   .home_footer .second_block {
     width: 33% !important; }
   .home_footer .last_block {
@@ -7699,7 +7725,8 @@ button.close {
   .home_footer ul li a {
     font-size: 14px !important; }
   .home_footer .first_block {
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     .home_footer .first_block ul {
       margin-right: 0 !important;
       width: 100% !important;
@@ -7711,7 +7738,9 @@ button.close {
     width: 100% !important;
     text-align: center; }
   .home_footer ul.social_icons_btn {
-    float: none !important; } }
+    float: none !important; }
+  .home_footer .first_block ul li {
+    width: 100% !important; } }
 body {
   font-family: "ubuntu_regular"; }
 

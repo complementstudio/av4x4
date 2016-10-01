@@ -46,22 +46,7 @@ $teams = get_posts(array(
                 </div>
             </div>
             <!--<div class="meet_team_page">-->
-            <div class="clearfix view_pakages_section">
-                <div class="left_block">
-                    <div>
-                        <p>We love 4x4’s and have the experience and crew to help
-                            guide you on finding the best parts and packages for your
-                            4x4.  Let our crew help you find the best fit.
-                        </p>
-                    </div>
-                </div>
-                <div class="right_block">
-                    <a href="javascript:void(0)" class="view_pakages_btn"><span>CONTACT US FOR A</span>
-                        <span>FREE CONSULTATION</span>
-                    </a>
-                    <p>Call us at (208) 123-4567 or chat below</p>
-                </div>
-            </div>
+            <?php echo do_shortcode("[sc name='Team']"); ?>
             <!--</div>-->
             <!--<div class="meet_team_page">-->
             <div class="wrapper">

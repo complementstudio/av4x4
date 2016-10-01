@@ -5,9 +5,12 @@
     max-width: 1400px;
     margin: 0 auto;
     @include padding-two-param(0,15px);
-    p{
+    .menu_title{
       @include font-source(20px,$light_grey);
       font-family: $bold-font;
+      float: left;
+      width: 100%;
+      text-transform: uppercase;
     }
     ul.footer_menu{
       margin-bottom: 20px!important;
@@ -15,6 +18,10 @@
         a{
           @include font-source(16px,$footer-menu-color,600,1.75);
           //font-family: $bold-font;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          float: left;
+          width: 100%;
           &:hover{
             color: $white;
           }
@@ -27,7 +34,13 @@
     float: left;
     ul{
       float: left;
-      margin-right: 10%;
+      //margin-right: 10%;
+      width: 33%;
+      li{
+        width: 100%;
+        float: left;
+        margin-right: .3%;
+      }
     }
   }
   .second_block,.last_block{
@@ -35,12 +48,18 @@
     float: left;
   }
   .last_block{
+    list-style-type: none;
+    float: right;
+    ul {
+      float: left;
+    }
     ul.social_icons_btn{
       float: left;
       background: $button_main_color;
       @include padding-two-param(1px,10px);
       @include font-source(16px,$light_grey);
       margin-bottom: 15px!important;
+      margin-left: 10px;
       li{
         a{
           @include font-source(20px,$light_grey);
@@ -89,7 +108,7 @@
       width: 100%!important;
       ul{
         margin-right: 0!important;
-        width: 33%!important;
+        //width: 33%!important;
       }
     }
     .second_block {
@@ -116,10 +135,12 @@
     }
     .first_block {
       width: 100%;
+      text-align: center;
       ul {
         margin-right: 0 !important;
         width: 100% !important;
         text-align: center;
+
       }
     }
     .second_block {
@@ -132,6 +153,15 @@
     }
     ul.social_icons_btn {
       float: none !important;
+    }
+    .first_block{
+
+      ul{
+        li{
+          width: 100%!important;
+        }
+
+      }
     }
   }
 }

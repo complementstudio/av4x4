@@ -1,10 +1,9 @@
-
-jQuery( ".our_service_btn,ul.menu_dropdown" )
+jQuery( ".our_service_btn,.menu-item-has-children" )
     .mouseover(function() {
-        jQuery( "ul.menu_dropdown" ).show();
+        jQuery(this).find( "ul.menu_dropdown" ).show();
     })
     .mouseout(function() {
-        jQuery( "ul.menu_dropdown" ).hide();
+        jQuery(this).find( "ul.menu_dropdown" ).hide();
 });
 
 
@@ -58,3 +57,50 @@ jQuery('#slider').flexslider({
     slideshow: false,
     sync: "#carousel"
 });
+jQuery('.header_slider').slick({
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    speed: 1000,
+    fade: true,
+    cssEase: 'linear'
+});
+
+
+jQuery('.home_slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+        {
+            breakpoint: 1470,
+            settings: {
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                arrows: false,
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 400,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
+        }
+
+    ]
+});
+

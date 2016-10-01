@@ -16,13 +16,23 @@ $description = '';
      $title         = get_field( 'service_title', $page_id );
      $description   = get_field( 'service_description', $page_id );
  }
-$our_services = get_posts(
+
+$our_services_1 = get_posts(
     array( 'showposts' => -1,
         'post_type' => 'services',
-        'posts_per_page' => 9,
-
+        'post_status' => 'publish',
+        'suppress_filters' => false,
+        'cat' =>  3,
     )
 );
+
+$our_services_2 = get_posts(
+    array( 'showposts' => -1,
+        'post_type' => 'services',
+        'category__not_in' =>  3,
+    )
+);
+$our_services = array_merge($our_services_1,$our_services_2);
 ?>
 
     <div class="home_content clearfix">

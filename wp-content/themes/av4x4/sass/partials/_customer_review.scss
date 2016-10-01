@@ -1,3 +1,13 @@
+.cst_page {
+  padding: 0px 0px 60px 0px;
+  .review_title{
+    h2{
+      margin-top: 0px;
+      margin-bottom: 40px;
+    }
+  }
+
+}
 .customer_review_page{
   .review_title{
     h2{
@@ -6,7 +16,7 @@
     }
     p{
       @include font-source(22px,$grey_text,normal,32px,1.2px);
-      width: 70%;
+      width: 100%;
     }
   }
   .review_block{

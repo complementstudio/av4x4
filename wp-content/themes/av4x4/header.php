@@ -60,11 +60,11 @@ if(is_front_page()) {
 						<span class="header_toggle_icon"><i class="ion-navicon"></i></span>
 
 						<?php
-
-						$defaults = array(
-							'items_wrap'      => '<ul class="list-unstyled list-inline pull-right main_menu">%3$s</ul>',
-						);
-						wp_nav_menu($defaults);
+							$defaults = array(
+								'items_wrap'      => '<ul class="list-unstyled list-inline pull-right main_menu">%3$s</ul>',
+								'menu' => 'Header_nav'
+							);
+							wp_nav_menu($defaults);
 						?>
 					</div>
 				</div>
