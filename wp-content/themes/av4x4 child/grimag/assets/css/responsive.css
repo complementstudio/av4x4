@@ -1,0 +1,2142 @@
+@media only screen and ( min-width: 1320px ) {
+/*===============================================
+
+	M O N I T O R
+	1320px/unlimited
+
+===============================================*//**/
+
+	/* Content area */
+	.sidebar-width-alt div.post-single {
+		width: 629px;
+	}
+
+	/* If sidebar alternative */
+	.sidebar-width-alt #content-box {
+		width: 850px;
+	}
+
+		/* If sidebar alternative & not exists */
+		.sidebar-width-alt .sidebar-position-none #content-box {
+			width: auto;
+		}
+
+	.sidebar-width-alt #sidebar {
+		width: 350px;
+	}
+
+/**/}
+
+
+@media only screen and ( min-width: 960px ) and ( max-width: 1319px ) {
+/*===============================================
+
+	T A B L E T   /   L A P T O P
+	960px/1319px
+
+===============================================*//**/
+
+/*
+
+	1 - LAYOUT
+
+		- Header
+		- Content
+		- Footer
+
+	2 - MENU
+
+		- Primary
+		- Secondary
+
+	3 - SIDEBARS
+
+		- Sidebar
+		- Footer
+
+	5 - COMMON
+
+		- Titles
+
+	6 - POSTS
+
+		- Featured
+
+	7 - WIDGETS
+
+	8 - BUDDYPRESS
+
+*/
+
+	/*===========================================
+		L A Y O U T
+	===========================================*/
+
+	.boxed #layout {
+		max-width: 985px;
+	}
+
+	/*--- Header ------------------------------*/
+
+	#header-holder {
+		width: 935px;
+	}
+
+		#logo {
+			width: 190px;
+		}
+
+			#logo h2 {
+				max-width: 190px;
+			}
+
+	#header-holder-2 {
+		width: 935px;
+	}
+
+	#hcustom {
+		width: 695px;
+	}
+
+		#hcustom .sidebar {
+			max-width: 695px;
+		}
+
+
+	/*--- Content -----------------------------*/
+
+	#content-layout {
+		width: 935px;
+	}
+
+		div.post-single {
+			width: 524px;
+		}
+
+		.sidebar-position-right #content-box {
+			width: 695px;
+		}
+
+			.sidebar-position-right #content-box > div {
+				padding-right: 26px;
+			}
+
+		.sidebar-position-left #content-box {
+			width: 695px;
+		}
+		
+			.sidebar-position-left #content-box > div {
+				padding-left: 26px;
+			}
+
+		.sidebar-position-none div.post-single {
+			width: 790px;
+		}
+
+
+	/*--- Footer ------------------------------*/
+
+	#footer-holder {
+		width: 935px;
+	}
+
+		#copyrights-holder {
+			width: 885px;
+		}
+
+
+	/*===========================================
+		M E N U
+	===========================================*/
+
+	/*--- Primary -----------------------------*/
+
+	#menu {
+		width: 935px;
+	}
+
+	/*--- Secondary ---------------------------*/
+
+	#menu-2 {
+	}
+
+
+	/*===========================================
+		S I D E B A R S
+	===========================================*/
+
+	/*--- Sidebar -----------------------------*/
+
+	#sidebar {
+		width: 240px;
+	}
+
+		.sidebar-position-right .sidebar {
+			margin-left: 25px;
+		}
+
+		.sidebar-position-left .sidebar {
+			margin-right: 25px;
+		}
+
+	/*--- Ad Sidebars -------------------------*/
+
+	.sidebar-ad-a .widget {
+		max-width: 695px;
+	}
+
+	.sidebar-ad-c .widget {
+		max-width: 935px;
+	}
+
+	/*--- Footer ------------------------------*/
+
+	.sidebar-footer > div {
+		margin-right: 25px;
+	}
+
+		/*- 1/3 + 1/3 + 1/3 -*/
+	
+		.footer-box-v1 .sidebar-footer {
+			width: 320px;
+		}
+	
+		.footer-box-v1 .sidebar-footer.last {
+			width: 295px;
+		}
+
+		/*- 1/4 + 1/4 + 1/2 -*/
+	
+		.footer-box-v2 .sidebar-footer {
+			width: 240px;
+		}
+		
+		.footer-box-v2 .sidebar-footer.last {
+			width: 455px;
+		}
+
+		/*- 1/4 + 1/2 + 1/4 -*/
+	
+		.footer-box-v3 .sidebar-footer {
+			width: 480px;
+		}
+		
+		.footer-box-v3 .sidebar-footer:first-child {
+			width: 240px;
+		}
+	
+		.footer-box-v3 .sidebar-footer.last {
+			width: 215px;
+		}
+
+	/*- 1/2 + 1/4 + 1/4 -*/
+
+	.footer-box-v4 .sidebar-footer {
+		width: 240px;
+	}
+	
+	.footer-box-v4 .sidebar-footer:first-child {
+		width: 480px;
+	}
+
+	.footer-box-v4 .sidebar-footer.last {
+		width: 215px;
+	}
+
+	/*- 1/4 + 1/4 + 1/4 + 1/4 -*/
+
+	.footer-box-v5 .sidebar-footer {
+		width: 240px;
+	}
+	
+	.footer-box-v5 .sidebar-footer.last {
+		width: 215px;
+	}
+
+	/*- 2/3 + 1/3 -*/
+
+	.footer-box-v6 .sidebar-footer {
+		width: 295px;
+	}
+
+	.footer-box-v6 .sidebar-footer:first-child {
+		width: 640px;
+	}
+
+
+	/*===========================================
+		C O M M O N
+	===========================================*/
+
+	/*--- Titles ------------------------------*/
+
+	.sidebar-homepage-b h1 {
+		font-size: 2.1em;
+	}
+
+		.sidebar-homepage-b h1 span {
+			display: inline;
+		}
+
+
+	/*===========================================
+		P O S T S
+	===========================================*/
+
+	/*--- Featured ----------------------------*/
+
+	.posts-featured-wrapper > div.posts-featured-a-wrapper {
+		width: 455px;
+		margin-bottom: 25px;
+	}
+
+		div.posts-featured-a-wrapper a.post-thumb {
+			height: 319px;
+		}
+
+		div.posts-featured-alone-wrapper a.post-thumb {
+			height: 467px;
+		}
+
+	.posts-featured-wrapper > div.posts-featured-b-wrapper {
+		width: 215px;
+		margin-bottom: 25px;
+		margin-left: 25px;
+	}
+
+		a.post-thumb {
+			height: 147px;
+		}
+
+	.posts-featured-wrapper > div.posts-featured-c-wrapper {
+		width: 215px;
+		margin-bottom: 25px;
+		margin-right: 25px;
+	}
+
+		.posts-featured-wrapper .meta .ico16-views {
+			display: none;
+		}
+
+
+	/*--- Template 4 --------------------------*/
+
+	.post-t4 {
+		padding-left: 240px;
+	}
+
+		.post-t4 .thumb-wrapper {
+			width: 215px;
+			margin-left: -240px;
+		}
+
+	.post-t4-no-thumb {
+		padding-left: 0;
+	}
+
+	/*--- Related -----------------------------*/
+
+	.posts-related-wrapper div.posts-related-post-wrapper {
+		width: 215px;
+	}
+
+
+	/*===========================================
+		W I D G E T S
+	===========================================*/
+
+	/*--- bbPress -----------------------------*/
+
+	.bbp-login-form .bbp-username input,
+	.bbp-login-form .bbp-password input {
+		width: 145px;
+	}
+
+	/*--- buddyPress --------------------------*/
+
+	#bp-login-widget-user-login,
+	#bp-login-widget-user-pass {
+		width: 145px;
+	}
+
+
+	/*===========================================
+		B U D D Y P R E S S
+	===========================================*/
+
+	#activity-filter-select label {
+		display: none;
+	}
+
+
+/**/}
+
+
+@media only screen and ( min-width: 640px ) and ( max-width: 959px ) {
+/*===============================================
+
+	T A B L E T   V
+	640px/959px
+
+===============================================*//**/
+
+/*
+
+	1 - LAYOUT
+
+		- Header
+		- Content
+		- Footer
+
+	2 - MENU
+
+		- Primary
+		- Secondary
+
+	3 - SIDEBARS
+
+		- Sidebar
+		- Footer
+		- Ad sidebars
+
+	5 - POST
+
+	6 - SHORTCODES
+
+	7 - WIDGETS
+
+		- Get In Touch
+
+	8 - COMMON
+
+		- Titles
+
+	9 - ICONS
+
+	10 - TEMPLATES
+
+	11 - BUDDYPRESS
+
+*/
+
+	/*===========================================
+		L A Y O U T
+	===========================================*/
+
+	body, div, td {
+		font-size: 1em;
+	}
+
+		.boxed #layout {
+			max-width: 640px;
+		}
+
+	/*--- Header ------------------------------*/
+
+	#header-holder {
+		width: auto;
+	}
+
+		#logo {
+			float: none;
+			width: auto;
+			height: auto;
+			margin: 0 auto;
+			padding: 50px 0;
+		}
+
+			#logo h2 {
+				max-width: 590px;
+				margin: 0;
+				text-align: center;
+			}
+
+				#logo h2 img {
+					margin: 0 auto;
+				}
+
+		#hcustom {
+			float: none;
+			width: 590px;
+			height: auto;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+			#hcustom .sidebar {
+				max-width: 590px;
+			}
+
+				.sidebar-ad-a .widget {
+					max-width: 590px;
+					margin: 0 0 50px;
+				}
+
+					.sidebar-ad-a .adsbygoogle {
+						margin: 0 auto;
+					}
+
+	#header-holder-2 {
+		width: auto;
+	}
+
+	/*--- Search form -----------------------------*/
+
+	#search-form-header span {
+		background-size: 24px 24px;
+	}
+
+	#search-form-header input {
+		font-size: 15px;
+	}
+
+
+	/*--- Content -----------------------------*/
+
+	#content-layout {
+		width: 590px;
+		margin: 0 auto;
+	}
+
+		#content-holder #content-box {
+			float: none;
+			width: auto;
+		}
+
+			#content-box {
+				min-height: auto;
+			}
+
+				.home .projects #content-box {
+					padding-bottom: 50px;
+				}
+
+				#content-holder #content-box > div {
+					padding: 50px 0;
+					background: none;
+				}
+	
+					.home #content-holder #content-box > div {
+					}
+
+		#content-holder div.post-single {
+			float: none;
+			width: 590px;
+			margin: 0;
+		}
+
+	/*--- Footer ------------------------------*/
+
+	#footer-holder {
+		width: 590px;
+		padding-top: 40px;
+	}
+
+		#footer-box {
+			margin-right: -50px;
+		}
+
+	#copyrights-holder {
+		width: auto;
+	}
+
+		#copyrights-box > div {
+			width: 100%;
+			text-align: center;
+		}
+
+
+	/*===========================================
+		M E N U
+	===========================================*/
+
+	/*--- Primary -----------------------------*/
+
+	#menu-select {
+		display: block;
+	}
+
+	#menu {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+		#menu > div {
+			display: block;
+		}
+
+			ul.menu {
+				display: none;
+				float: none;
+				width: 0; /* auto */
+				height: 47px; /* auto */
+				overflow: hidden;
+			}
+
+	/*--- Secondary ---------------------------*/
+
+	#menu-2 {
+		display: table;
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+		padding: 5px;
+	}
+
+		ul.menu-2 > li {
+			float: none;
+			margin-right: 0;
+		}
+
+			ul.menu-2 > li > a {
+				padding: 5px 7px;
+			}
+
+				ul.menu-2 > li a span {
+					display: none;
+				}
+
+
+	/*===========================================
+		S I D E B A R S
+	===========================================*/
+
+	/*--- Sidebar -----------------------------*/
+
+	#content-holder #sidebar {
+		float: none;
+		width: auto;
+		padding: 0;
+	}
+
+		#content-holder .sidebar {
+			margin: 0;
+		}
+
+	#content-holder div.sidebar-post {
+		width: 540px;
+		margin: 50px 0 25px;
+		padding: 2em 25px;
+		background-repeat: repeat;
+	}
+	
+		.sidebar-post,
+		.sidebar-post div {
+			font-size: inherit;
+		}
+	
+		#stickyDiv {
+			position: relative !important;
+			float: right;
+			width: 245px;
+			top: auto !important;
+		}
+
+			#stickyDiv > div {
+				margin: 0 0 25px;
+			}
+
+	/*--- Footer ------------------------------*/
+
+	#footer-box .sidebar-footer,
+	#footer-box .sidebar-footer.last {
+		width: 307px;
+	}
+
+		#footer-box .sidebar-footer > div,
+		#footer-box .sidebar-footer.last > div {
+			margin-right: 25px;
+			margin-top: 0;
+		}
+
+	/*--- Ad sidebars -------------------------*/
+
+	.sidebar-ad-b,
+	#sidebar-ad-c {
+	}
+
+		.sidebar-ad-c .widget {
+			max-width: 590px;
+		}
+
+
+	/*===========================================
+		P O S T
+	===========================================*/
+
+	.page-title {
+	}
+
+	h2.post-title {
+		margin-bottom: 0.5em;
+	}
+
+	.single-author-info {
+		min-height: 130px;
+	}
+
+		.single-author-upic {
+			float: right;
+			margin: 0 0 10px 25px;
+		}
+
+	.post-short-info {
+		float: left;
+		width: 245px;
+		margin: 0;
+		padding: 0.5em 25px 0.5em 0;
+		background-repeat: repeat-y;
+	}
+
+		#content-box .post-short-info > p,
+		#content-box .post-short-info > div {
+			background-position: left 0.35em;
+		}
+
+		.post-short-info p {
+			margin-bottom: 1em;
+		}
+
+
+	/*===========================================
+		S H O R T C O D E S
+	===========================================*/
+
+	.column {
+		float: none;
+		width: auto !important;
+	}
+
+		.column > div {
+			margin-right: 0 !important;
+		}
+
+	.pricing-table-featured .pricing-table-title {
+		margin-top: 0;
+	}
+
+
+	/*===========================================
+		W I D G E T S
+	===========================================*/
+
+	/*--- Get In Touch ------------------------*/
+
+	.widget-info p.widget-info-address,
+	.widget-info p.widget-info-phone,
+	.widget-info p.widget-info-email,
+	.widget-info p.widget-info-name {
+		background-position: 0 0.4em;
+	}
+
+
+	/*===========================================
+		C O M M O N
+	===========================================*/
+
+	/*--- Titles ------------------------------*/
+
+	#content-holder .sidebar-homepage-b {
+		margin-top: 25px;
+	}
+
+		.sidebar-homepage-b h1 {
+			font-size: 1.5em;
+		}
+	
+			.sidebar-homepage-b h1 span {
+				display: inline;
+			}
+
+
+	/*===========================================
+		I C O N S
+	===========================================*/
+
+	/*--- Social ------------------------------*/
+
+	.icons-social {
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 0 5px;
+	}
+
+		.icons-social a {
+			display: inline-block;
+			float: none;
+		}
+
+
+	/*===========================================
+		T E M P L A T E S
+	===========================================*/
+
+	/*--- Featured ----------------------------*/
+
+	.posts-featured-wrapper {
+		float: none;
+		margin: 0 auto;
+	}
+
+		.posts-featured-wrapper > div.posts-featured-a-wrapper {
+			margin: 0 0 66px;
+			padding: 8px;
+			background: url('../images/line-light.png');
+			box-shadow: none;
+		}
+
+			.dark .posts-featured-wrapper > div.posts-featured-a-wrapper {
+				background: url('../images/bg-white-05.png');
+				box-shadow: none;
+			}
+
+				.posts-featured-wrapper > div.posts-featured-a-wrapper > div {
+					background: #FFF;
+				}
+	
+					.dark .posts-featured-wrapper > div.posts-featured-a-wrapper > div {
+						background: none;
+					}
+
+		div.posts-featured-alone-wrapper a.post-thumb {
+			height: 410px;
+		}
+
+		.posts-featured-wrapper > div.posts-featured-b-wrapper {
+			display: inline-block;
+		}
+
+		.posts-featured-wrapper > div.b-even {
+			margin: 0 0 66px;
+		}
+
+		.posts-featured-wrapper > div.b-odd {
+			margin: 0 0 66px 66px;
+		}
+
+		.posts-featured-wrapper > div.c-even {
+			margin: 0 0 66px;
+		}
+
+		.posts-featured-wrapper > div.c-odd {
+			margin: 0 0 66px 66px;
+		}
+
+	/*--- Related -----------------------------*/
+
+	.posts-related-2-wrapper div.posts-related-post-wrapper {
+		margin: 0 0 0 auto;
+	}
+
+	.posts-related-2-wrapper td:first-child div.posts-related-post-wrapper {
+		margin: 0 auto 0 0;
+	}
+
+
+	/*===========================================
+		B U D D Y P R E S S
+	===========================================*/
+
+	#buddypress div#subnav > ul {
+		width: 100%;
+		text-align: center;
+	}
+
+		#buddypress div#subnav.item-list-tabs ul li.last {
+			position: relative;
+			width: 100%;
+			margin-top: 25px;
+		}
+
+		#buddypress div.dir-search,
+		#buddypress div.message-search {
+			margin: 25px auto 0;
+		}
+
+	#buddypress div.item-list-tabs ul li.selected a span,
+	#buddypress div.item-list-tabs ul li.current a span,
+	#buddypress div.item-list-tabs ul li a span,
+	#buddypress div.item-list-tabs ul li a:hover span {
+		position: relative;
+		display: inline-block;
+		top: -0.2em;
+		margin-right: -3px;
+		margin-left: 5px;
+	}
+
+/**/}
+
+
+@media only screen and ( min-width: 480px ) and ( max-width: 639px ) {
+/*===============================================
+
+	P H O N E   H
+	480px/639px
+
+===============================================*//**/
+
+/*
+
+	1 - LAYOUT
+
+		- Header
+		- Content
+		- Footer
+
+	2 - MENU
+
+		- Primary
+		- Secondary
+
+	3 - SIDEBARS
+
+		- Sidebar
+		- Footer
+		- Ad sidebars
+
+	4 - TEMPLATES / POSTS
+
+		- Template 4
+
+	6 - POST
+
+	7 - SHORTCODES
+
+	8 - WP CLASSES
+
+	9 - WIDGETS
+
+		- Get In Touch
+
+	10 - COMMON
+
+		- Titles
+
+	11 - ICONS
+
+	12 - BUDDYPRESS
+
+*/
+
+	/*===========================================
+		L A Y O U T
+	===========================================*/
+
+	body, div, td {
+		font-size: 1em;
+	}
+
+		.boxed #layout {
+			max-width: 510px;
+		}
+
+	/*--- Header ------------------------------*/
+
+	#header-holder {
+		width: auto;
+	}
+
+		#logo {
+			float: none;
+			width: auto;
+			height: auto;
+			margin: 0 auto;
+			padding: 50px 0;
+		}
+
+			#logo h2 {
+				max-width: 430px;
+				margin: 0;
+				text-align: center;
+			}
+
+				#logo h2 img {
+					margin: 0 auto;
+				}
+
+		#hcustom {
+			float: none;
+			width: 430px;
+			height: auto;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+			#hcustom .sidebar {
+				max-width: 430px;
+			}
+
+				.sidebar-ad-a .widget {
+					max-width: 430px;
+					margin: 0 0 50px;
+				}
+
+					.sidebar-ad-a .adsbygoogle {
+						margin: 0 auto;
+					}
+
+	#header-holder-2 {
+		width: auto;
+	}
+
+	/* Search form */
+	#search-form-header input {
+		font-size: 15px;
+	}
+
+	/*--- Content -----------------------------*/
+
+	#content-layout {
+		width: 430px;
+		margin: 0 auto;
+	}
+
+		#content-holder #content-box {
+			float: none;
+			width: auto;
+		}
+
+			#content-box {
+				min-height: auto;
+			}
+
+				.home .projects #content-box {
+					padding-bottom: 50px;
+				}
+
+				#content-holder #content-box > div {
+					padding: 50px 0;
+					background: none;
+				}
+	
+					.home #content-holder #content-box > div {
+					}
+
+		#content-holder div.post-single {
+			float: none;
+			width: 430px;
+			margin: 0;
+		}
+
+	/*--- Footer ------------------------------*/
+
+	#footer-holder {
+		width: 430px;
+		padding-top: 40px;
+	}
+
+	#copyrights-holder {
+		width: auto;
+	}
+
+		#copyrights-box > div {
+			width: 100%;
+			text-align: center;
+		}
+
+
+	/*===========================================
+		M E N U
+	===========================================*/
+
+	#menu-select {
+		display: block;
+	}
+
+	#menu {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+		#menu > div {
+			display: block;
+		}
+
+			ul.menu {
+				display: none;
+				float: none;
+				width: 0; /* auto */
+				height: 47px; /* auto */
+				overflow: hidden;
+			}
+
+	/*--- Secondary ---------------------------*/
+
+	#menu-2 {
+		display: table;
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+		padding: 5px;
+	}
+
+		ul.menu-2 > li {
+			float: none;
+			margin: 0;
+		}
+
+			ul.menu-2 > li > a {
+				padding: 5px;
+			}
+
+				ul.menu-2 > li a span {
+					display: none;
+				}
+
+
+	/*===========================================
+		S I D E B A R S
+	===========================================*/
+
+	/*--- Sidebar -----------------------------*/
+
+	#content-holder #sidebar {
+		float: none;
+		width: auto;
+		padding: 0;
+	}
+
+		#content-holder .sidebar {
+			margin: 0;
+		}
+
+	#content-holder div.sidebar-post {
+		width: 380px;
+		margin: 50px 0 25px;
+		padding: 2em 25px;
+		background-repeat: repeat;
+	}
+	
+		.sidebar-post,
+		.sidebar-post div {
+			font-size: inherit;
+		}
+	
+		#stickyDiv {
+			position: relative !important;
+			float: right;
+			width: 170px;
+			top: auto !important;
+		}
+
+			#stickyDiv > div {
+				margin: 0 0 25px;
+			}
+
+	/*--- Footer ------------------------------*/
+
+	#footer-box .sidebar-footer,
+	#footer-box .sidebar-footer.last {
+		width: 430px;
+	}
+
+		#footer-box .sidebar-footer > div,
+		#footer-box .sidebar-footer.last > div {
+			margin-right: 0;
+			margin-top: 0;
+		}
+
+	/*--- Ad sidebars -------------------------*/
+
+	.sidebar-ad-b,
+	#sidebar-ad-c {
+	}
+
+		.sidebar-ad-c .widget {
+			max-width: 430px;
+		}
+
+
+	/*===========================================
+		T E M P L A T E S / POSTS
+	===========================================*/
+
+	/*--- Featured ----------------------------*/
+
+	.posts-featured-wrapper {
+		float: none;
+		margin: 0 auto;
+	}
+
+		.posts-featured-wrapper > div.posts-featured-a-wrapper {
+			width: 430px;
+			margin: 0 0 25px;
+		}
+
+			div.posts-featured-a-wrapper a.post-thumb {
+				height: 306px;
+			}
+
+			div.posts-featured-alone-wrapper a.post-thumb {
+				height: 306px;
+			}
+
+		.posts-featured-wrapper > div.posts-featured-b-wrapper {
+			width: 202px;
+			display: inline-block;
+		}
+
+			.posts-featured-wrapper > div.b-even {
+				margin: 0 0 25px;
+			}
+	
+			.posts-featured-wrapper > div.b-odd {
+				margin: 0 0 25px 25px;
+			}
+
+				.posts-featured-wrapper > div.posts-featured-b-wrapper .ico16-views {
+					display: none;
+				}
+
+		.posts-featured-wrapper > div.posts-featured-c-wrapper {
+			width: 202px;
+			display: inline-block;
+		}
+
+			.posts-featured-wrapper > div.c-even {
+				margin: 0 0 25px;
+			}
+	
+			.posts-featured-wrapper > div.c-odd {
+				margin: 0 0 25px 25px;
+			}
+
+				.posts-featured-wrapper > div.posts-featured-c-wrapper .ico16-views {
+					display: none;
+				}
+
+		.posts-featured-wrapper a.post-thumb {
+			height: 138px;
+		}
+
+	/*--- Template 4 --------------------------*/
+
+	.post-t4 {
+		padding-left: 0;
+	}
+
+		.post-t4 .thumb-wrapper {
+			margin: 0 0 40px;
+		}
+
+		.post-t4 h3 {
+			clear: both;
+		}
+
+	/*--- Related -----------------------------*/
+
+	.posts-related-wrapper div.posts-related-post-wrapper {
+		width: 202px;
+	}
+
+		.posts-related-wrapper a.post-thumb {
+			height: 138px;
+		}
+
+	.posts-related-2-wrapper div.posts-related-post-wrapper {
+		margin: 0 0 0 auto;
+	}
+
+	.posts-related-2-wrapper td:first-child div.posts-related-post-wrapper {
+		margin: 0 auto 0 0;
+	}
+
+
+	/*===========================================
+		P O S T
+	===========================================*/
+
+	/*--- Post data ---------------------------*/
+
+	.page-title {
+	}
+
+	h2.post-title {
+		margin-bottom: 0.5em;
+	}
+
+	/*--- Post info ---------------------------*/
+
+	.single-author-info {
+		min-height: 130px;
+	}
+
+		.single-author-upic {
+			float: right;
+			margin: 0 0 10px 25px;
+		}
+
+	.post-short-info {
+		float: left;
+		width: 160px;
+		margin: 0;
+		padding: 0.5em 25px 0.5em 0;
+		background-repeat: repeat-y;
+	}
+
+		#content-box .post-short-info > p,
+		#content-box .post-short-info > div {
+			background-position: left 0.35em;
+		}
+
+		.post-short-info p {
+			margin-bottom: 1em;
+		}
+
+	/*--- Prev/Next post links ----------------*/
+
+	#pre_next_post {
+		text-align: center;
+		padding: 1em 45px;
+		background-image: none;
+	}
+
+		#pre_next_post a {
+			height: 16px;
+			font-size: 0;
+			margin: 0.5em 0;
+			max-width: none;
+		}
+
+			#pre_next_post a.n {
+			}
+
+	/*--- Ads ---------------------------------*/
+
+	#title-after,
+	#post-before,
+	#post-after {
+	}
+	
+
+	/*===========================================
+		S H O R T C O D E S
+	===========================================*/
+
+	.column {
+		float: none;
+		width: auto !important;
+	}
+
+		.column > div {
+			margin-right: 0 !important;
+		}
+
+	.pricing-table-featured .pricing-table-title {
+		margin-top: 0;
+	}
+
+	.pullquote {
+		float: none;
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	/*-------------------------------------------
+		W P   C L A S S E S
+	-------------------------------------------*/
+
+	.alignleft,
+	.alignright {
+		float: none;
+		clear: both;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	/*===========================================
+		W I D G E T S
+	===========================================*/
+
+	/*--- Get In Touch ------------------------*/
+
+	.widget-info p.widget-info-address,
+	.widget-info p.widget-info-phone,
+	.widget-info p.widget-info-email,
+	.widget-info p.widget-info-name {
+		background-position: 0 0.4em;
+	}
+
+
+	/*===========================================
+		C O M M O N
+	===========================================*/
+
+	/*--- Titles ------------------------------*/
+
+	#content-holder .sidebar-homepage-b {
+		margin-top: 25px;
+	}
+
+		.sidebar-homepage-b h1 {
+			font-size: 1.5em;
+		}
+	
+			.sidebar-homepage-b h1 span {
+				display: inline;
+			}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+	h3 {
+		font-size: 1.4em;
+	}
+
+	h4 {
+		font-size: 1.2em;
+	}
+
+	/*===========================================
+		I C O N S
+	===========================================*/
+
+	/*--- Social ------------------------------*/
+
+	.icons-social {
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 0 5px;
+	}
+
+		.icons-social a {
+			display: inline-block;
+			float: none;
+		}
+
+
+	/*===========================================
+		B U D D Y P R E S S
+	===========================================*/
+
+	#buddypress div#subnav > ul {
+		width: 100%;
+		text-align: center;
+	}
+
+		#buddypress div#subnav.item-list-tabs ul li.last {
+			position: relative;
+			width: 100%;
+			margin-top: 25px;
+		}
+
+		#buddypress div.dir-search,
+		#buddypress div.message-search {
+			margin: 25px auto 0;
+		}
+
+	#buddypress div.item-list-tabs ul li.selected a span,
+	#buddypress div.item-list-tabs ul li.current a span,
+	#buddypress div.item-list-tabs ul li a span,
+	#buddypress div.item-list-tabs ul li a:hover span {
+		position: relative;
+		display: inline-block;
+		top: -0.2em;
+		margin-right: -3px;
+		margin-left: 5px;
+	}
+
+	body.activity-permalink #buddypress .activity-avatar img.avatar {
+		width: 40px;
+		height: 40px;
+	}
+
+	body.activity-permalink #buddypress .activity-list li .activity-content,
+	body.activity-permalink #buddypress div.activity-comments {
+		margin-left: 75px;
+	}
+
+/**/}
+
+
+@media only screen and ( max-width: 479px ) {
+/*===============================================
+
+	P H O N E   V
+	320px/479px
+
+===============================================*//**/
+
+/*
+
+	1 - LAYOUT
+
+		- Header
+		- Content
+		- Footer
+
+	2 - MENU
+
+		- Primary
+		- Secondary
+
+	3 - SIDEBARS
+
+		- Sidebar
+		- Footer
+		- Ad sidebars
+
+	4 - TEMPLATES / POSTS
+
+		- Template 4
+
+	6 - POST
+
+	7 - SHORTCODES
+
+	8 - WP CLASSES
+
+	9 - COMMENTS
+
+	10 - WIDGETS
+
+		- Get In Touch
+
+	11 - COMMON
+
+		- Titles
+
+	12 - ICONS
+
+	13 - BBPRESS
+
+	14 - BUDDYPRESS
+
+*/
+
+	/*===========================================
+		L A Y O U T
+	===========================================*/
+
+	body, div, td {
+		font-size: 1em;
+	}
+
+		.boxed #layout {
+			max-width: 330px;
+		}
+
+	/*--- Header ------------------------------*/
+
+	#header-holder {
+		width: auto;
+	}
+
+		#logo {
+			float: none;
+			width: auto;
+			height: auto;
+			margin: 0 auto;
+			padding: 50px 0;
+		}
+
+			#logo h2 {
+				max-width: 300px;
+				margin: 0;
+				text-align: center;
+			}
+
+				#logo h2 img {
+					margin: 0 auto;
+				}
+
+		#hcustom {
+			float: none;
+			width: 300px;
+			height: auto;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+			#hcustom .sidebar {
+				max-width: 300px;
+			}
+
+				.sidebar-ad-a .widget {
+					max-width: 300px;
+					margin: 0 0 50px;
+				}
+
+					.sidebar-ad-a .adsbygoogle {
+						margin: 0 auto;
+					}
+
+	#header-holder-2 {
+		width: auto;
+	}
+
+	/* Search form */
+	#search-form-header input {
+		font-size: 15px;
+	}
+
+	/*--- Content -----------------------------*/
+
+	#content-layout {
+		width: 300px;
+		margin: 0 auto;
+	}
+
+		#content-holder #content-box {
+			float: none;
+			width: auto;
+		}
+
+			.home .projects #content-box {
+				padding-bottom: 50px;
+			}
+
+			#content-box {
+				min-height: auto;
+			}
+
+				#content-holder #content-box > div {
+					padding: 50px 0;
+					background: none;
+				}
+	
+					.home #content-holder #content-box > div {
+					}
+
+		#content-holder div.post-single {
+			float: none;
+			width: 300px;
+			margin: 0;
+		}
+
+	/*--- Footer ------------------------------*/
+
+	#footer-holder {
+		width: 300px;
+		padding-top: 40px;
+	}
+
+	#copyrights-holder {
+		width: auto;
+	}
+
+		#copyrights-box > div {
+			width: 100%;
+			text-align: center;
+		}
+
+
+	/*===========================================
+		M E N U
+	===========================================*/
+
+	/*--- Primary -----------------------------*/
+
+	#menu-select {
+		display: block;
+	}
+
+	#menu {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+		#menu > div {
+			display: block;
+		}
+
+			ul.menu {
+				display: none;
+				float: none;
+				width: 0; /* auto */
+				height: 47px; /* auto */
+				overflow: hidden;
+			}
+
+	/*--- Secondary ---------------------------*/
+
+	#menu-2 {
+		display: table;
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+		padding: 5px;
+	}
+
+		ul.menu-2 > li {
+			float: none;
+			margin: 0;
+		}
+
+			ul.menu-2 > li > a {
+				padding: 5px;
+			}
+
+				ul.menu-2 > li a span {
+					display: none;
+				}
+
+
+	/*===========================================
+		S I D E B A R S
+	===========================================*/
+
+	/*--- Sidebar -----------------------------*/
+
+	#content-holder #sidebar {
+		float: none;
+		width: auto;
+		padding: 0;
+	}
+
+		#content-holder .sidebar {
+			margin: 0;
+		}
+
+	#content-holder div.sidebar-post {
+		width: 250px;
+		margin: 50px 0 10px;
+		padding: 2em 25px;
+		background-repeat: repeat;
+	}
+	
+		.sidebar-post,
+		.sidebar-post div {
+			font-size: inherit;
+		}
+	
+		#stickyDiv {
+			position: relative !important;
+			width: 250px;
+			top: auto !important;
+		}
+
+
+	/*--- Footer ------------------------------*/
+
+	#footer-box .sidebar-footer,
+	#footer-box .sidebar-footer.last {
+		width: 300px;
+	}
+
+		#footer-box .sidebar-footer > div,
+		#footer-box .sidebar-footer.last > div {
+			margin-right: 0;
+			margin-top: 0;
+		}
+
+	/*--- Ad sidebars -------------------------*/
+
+	.sidebar-ad-b,
+	#sidebar-ad-c {
+	}
+
+		.sidebar-ad-c .widget {
+			max-width: 300px;
+		}
+
+
+	/*===========================================
+		T E M P L A T E S / POSTS
+	===========================================*/
+
+	/*--- Featured ----------------------------*/
+
+	.posts-featured-wrapper {
+		float: none;
+		margin: 0 auto;
+	}
+
+		.posts-featured-wrapper > div.posts-featured-a-wrapper {
+			float: none;
+			width: 300px;
+			margin: 0 0 25px;
+		}
+
+			div.posts-featured-a-wrapper a.post-thumb {
+				height: 213px;
+			}
+
+				div.posts-featured-a-wrapper .meta span:first-child {
+					display: none;
+				}
+
+			div.posts-featured-alone-wrapper a.post-thumb {
+				height: 213px;
+			}
+
+				div.posts-featured-alone-wrapper .meta span:first-child {
+					display: none;
+				}
+
+		.posts-featured-wrapper > div.posts-featured-b-wrapper {
+			float: none;
+		}
+
+			.posts-featured-wrapper > div.b-even {
+				margin: 0 auto 25px;
+			}
+	
+			.posts-featured-wrapper > div.b-odd {
+				margin: 0 auto 25px;
+			}
+
+		.posts-featured-wrapper > div.posts-featured-c-wrapper {
+			float: none;
+		}
+
+			.posts-featured-wrapper > div.c-even {
+				margin: 0 auto 25px;
+			}
+	
+			.posts-featured-wrapper > div.c-odd {
+				margin: 0 auto 25px;
+			}
+
+			div.posts-featured-wrapper > div.last {
+				margin: 0 auto 25px;
+			}
+
+		.posts-featured-wrapper a.post-thumb {
+		}
+
+	/*--- Template 4 --------------------------*/
+
+	.post-t4 {
+		padding-left: 0;
+	}
+
+		.post-t4 .thumb-wrapper {
+			margin: 0 0 40px;
+		}
+
+		.post-t4 h3 {
+			clear: both;
+		}
+
+	/*--- Related -----------------------------*/
+
+	.posts-related-2-wrapper td {
+		display: block;
+		width: 100%;
+	}
+
+		.posts-related-2-wrapper td:first-child {
+			padding-bottom: 25px;
+		}
+
+	/*===========================================
+		P O S T
+	===========================================*/
+
+	/*--- Post data ---------------------------*/
+
+	.page-title {
+	}
+
+	h2.post-title {
+		margin-bottom: 0.5em;
+	}
+
+	/*--- Post info ---------------------------*/
+
+	.single-author-info {
+		min-height: 130px;
+	}
+
+		.single-author-upic {
+			float: right;
+			margin: 0 0 10px 25px;
+		}
+
+		#content-box .post-short-info > p,
+		#content-box .post-short-info > div {
+			background-position: left 0.35em;
+		}
+
+		.post-short-info p {
+			margin-bottom: 1em;
+		}
+
+	/*--- Prev/Next post links ----------------*/
+
+	#pre_next_post {
+		text-align: center;
+		padding: 1em 45px;
+		background-image: none;
+	}
+
+		#pre_next_post a {
+			height: 16px;
+			font-size: 0;
+			margin: 0.5em 0;
+			max-width: none;
+		}
+
+			#pre_next_post a.n {
+			}
+
+	/*--- Ads ---------------------------------*/
+
+	#title-after,
+	#post-before,
+	#post-after {
+	}
+
+
+	/*===========================================
+		S H O R T C O D E S
+	===========================================*/
+
+	.column {
+		float: none;
+		width: auto !important;
+	}
+
+		.column > div {
+			margin-right: 0 !important;
+		}
+
+	.pricing-table-featured .pricing-table-title {
+		margin-top: 0;
+	}
+
+	.notice {
+		padding: 25px;
+	}
+
+	.pullquote {
+		float: none;
+		width: auto;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	/*===========================================
+		W P   C L A S S E S
+	===========================================*/
+
+	.alignleft,
+	.alignright {
+		float: none;
+		clear: both;
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/*===========================================
+		C O M M E N T S
+	===========================================*/
+
+	.children {
+		margin: 0;
+	}
+
+	.comment-top-level .comment-box,
+	.comment-low-level .comment-box {
+		padding-left: 0;
+	}
+
+		.avatar-box {
+			float: right;
+			margin-left: 1em;
+		}
+
+
+	/*===========================================
+		W I D G E T S
+	===========================================*/
+
+	/*--- Get In Touch ------------------------*/
+
+	.widget-info p.widget-info-address,
+	.widget-info p.widget-info-phone,
+	.widget-info p.widget-info-email,
+	.widget-info p.widget-info-name {
+		background-position: 0 0.4em;
+	}
+
+
+	/*===========================================
+		C O M M O N
+	===========================================*/
+
+	/*--- Titles ------------------------------*/
+
+	#content-holder .sidebar-homepage-b {
+		margin-top: 25px;
+	}
+
+		.sidebar-homepage-b h1 {
+			font-size: 1.5em;
+		}
+	
+			.sidebar-homepage-b h1 span {
+				display: inline;
+			}
+
+	h1 {
+		font-size: 1.6em;
+	}
+
+	h2 {
+		font-size: 1.45em;
+	}
+
+	h3 {
+		font-size: 1.3em;
+	}
+
+	h4 {
+		font-size: 1.2em;
+	}
+
+	/*===========================================
+		I C O N S
+	===========================================*/
+
+	/*--- Social ------------------------------*/
+
+	.icons-social {
+		float: none;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0 0 5px;
+	}
+
+		.icons-social a {
+			display: inline-block;
+			float: none;
+		}
+
+
+	/*===========================================
+		B B P R E S S
+	===========================================*/
+
+	.bbp-header {
+		display: none;
+	}
+
+	li.bbp-forum-info,
+	li.bbp-topic-title {
+		width: 100%;
+	}
+
+	li.bbp-forum-topic-count,
+	li.bbp-forum-reply-count,
+	li.bbp-topic-voice-count,
+	li.bbp-topic-reply-count,
+	li.bbp-forum-freshness,
+	li.bbp-topic-freshness {
+		display: none;
+	}
+
+	#bbpress-forums .bbp-body div.bbp-reply-author .bbp-author-avatar {
+		padding: 0;
+	}
+
+	#content fieldset.bbp-form,
+	#container fieldset.bbp-form,
+	#wrapper fieldset.bbp-form {
+		padding: 0;
+		border: none;
+	}
+
+	/*===========================================
+		B U D D Y P R E S S
+	===========================================*/
+
+	#buddypress div#subnav > ul {
+		width: 100%;
+		text-align: center;
+	}
+
+		#buddypress div#subnav.item-list-tabs ul li.last {
+			position: relative;
+			width: 100%;
+			margin-top: 25px;
+		}
+
+		#buddypress div.dir-search,
+		#buddypress div.message-search {
+			margin: 25px auto 0;
+		}
+
+	#buddypress div.item-list-tabs ul li.selected a span,
+	#buddypress div.item-list-tabs ul li.current a span,
+	#buddypress div.item-list-tabs ul li a span,
+	#buddypress div.item-list-tabs ul li a:hover span {
+		position: relative;
+		display: inline-block;
+		top: -0.2em;
+		margin-right: -3px;
+		margin-left: 5px;
+	}
+
+	body.activity-permalink #buddypress div.activity-comments ul li,
+	body.activity-permalink #buddypress .activity-list > li:first-child {
+		overflow: visible;
+	}
+
+	body.activity-permalink #buddypress .activity-avatar img.avatar {
+		width: 40px;
+		height: 40px;
+	}
+
+	body.activity-permalink #buddypress .activity-list li .activity-content,
+	body.activity-permalink #buddypress div.activity-comments {
+		margin-left: 65px;
+		overflow: visible;
+	}
+
+	#buddypress div.activity-comments {
+		overflow: visible;
+	}
+
+		#buddypress div.activity-comments ul li {
+			overflow: visible;
+		}
+
+			#buddypress div.activity-comments ul li > ul {
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+				#buddypress div.activity-comments li form.ac-form,
+				#buddypress div.activity-comments form.root {
+					clear: both;
+					margin-left: -25px;
+					padding: 0;
+				}
+			
+					#buddypress div.activity-comments form.root {
+						padding-top: 25px;
+					}
+
+	#buddypress a.activity-time-since {
+		float: none;
+		display: table;
+	}
+
+	body.activity-permalink #buddypress div.activity-comments div.acomment-content {
+		clear: left;
+	}
+
+
+/**/}

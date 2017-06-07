@@ -1,0 +1,768 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: strictthemes.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 00:19+0200\n"
+"PO-Revision-Date: 2016-07-22 00:19+0200\n"
+"Last-Translator: StrictThemes <info@strictthemes.com>\n"
+"Language-Team: StrictThemes <info@strictthemes.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:20
+msgid "Sorry, the page you asked for couldn't be found."
+msgstr "К сожалению, запрашиваемая страница не найдена."
+
+#: 404.php:21
+msgid "Please, try to use the search form below."
+msgstr "Пожалуйста, используйте форму поиска."
+
+#: 404.php:30 header.php:74
+msgid "Search..."
+msgstr "Поиск..."
+
+#: 404.php:37
+msgid "Here's a little map that might help you get back on track:"
+msgstr "Возможно, эти ссылки помогут найти то, что Вы искали."
+
+#: 404.php:41
+msgid "Categories"
+msgstr "Категории"
+
+#: 404.php:48
+msgid "Archives"
+msgstr "Архивы"
+
+#: 404.php:55 page.php:150 single.php:180
+msgid "Pages"
+msgstr "Страницы"
+
+#: archive.php:224 index.php:66 search.php:101 template-blog.php:200
+msgid "Older posts"
+msgstr "Назад"
+
+#: archive.php:224 index.php:66 search.php:101 template-blog.php:200
+msgid "Newer posts"
+msgstr "Вперед"
+
+#: archive.php:401
+msgid "Older projects"
+msgstr "Назад"
+
+#: archive.php:401
+msgid "Newer projects"
+msgstr "Вперед"
+
+#: archive.php:456 attachment.php:110 page.php:169 single.php:295
+msgid "Sorry, no posts matched your criteria."
+msgstr "К сожалению, ничего нет."
+
+#: comments.php:35
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr "Этот пост защищен паролем. Введите пароль для просмотра комментариев."
+
+#: comments.php:74
+msgid "Comments"
+msgstr "Комментарии"
+
+#: comments.php:96
+msgid "Pingbacks"
+msgstr "Пингбеки"
+
+#: comments.php:112
+msgid "Older comments"
+msgstr "Назад"
+
+#: comments.php:113
+msgid "Newer comments"
+msgstr "Вперед"
+
+#: comments.php:143
+msgid "You must be logged in to post a comment."
+msgstr "Вы должны войти, чтобы оставить комментарий."
+
+#: comments.php:143
+msgid "Log in"
+msgstr "Вход"
+
+#: comments.php:161
+msgid "Name"
+msgstr "Имя"
+
+#: comments.php:174
+msgid "Email"
+msgstr "Имейл"
+
+#: comments.php:188
+msgid "Website"
+msgstr "Сайт"
+
+#: comments.php:204
+msgid "Type here"
+msgstr "Напишите здесь"
+
+#: framework/functions/checking.php:31
+msgid "You're using ST Kit plugin v."
+msgstr "Вы используете плагин ST Kit"
+
+#: framework/functions/checking.php:31
+msgid "however"
+msgstr "однако"
+
+#: framework/functions/checking.php:31
+msgid "theme requires ST Kit v."
+msgstr "тема требует ST Kit"
+
+#: framework/functions/checking.php:31
+msgid "or higher. Update plugin"
+msgstr "или выше. Обновить плагин"
+
+#: framework/functions/checking.php:31
+msgid "here"
+msgstr "здесь"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr "Установить необходимые плагины"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "Установить плагины"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Установка плагина: %s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:339
+#, fuzzy, php-format
+msgid "Updating Plugin: %s"
+msgstr "Обновление плагина: %s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr "Что-то не так с API плагина."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr "Назад к инсталлятору необходимых плагинов"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:393
+msgid "Return to the Dashboard"
+msgstr "Вернуться к рабочему столу"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:394
+#: framework/functions/classes/class-tgm-plugin-activation.php:3247
+msgid "Plugin activated successfully."
+msgstr "Плагин успешно активирован."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:395
+#, fuzzy
+msgid "The following plugin was activated successfully:"
+msgstr "Нижеследующие плагины установлены и успешно активированы: %s."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:397
+#, fuzzy, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Плагин %1$s уже активирован."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:399
+#, fuzzy, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Плагин не активирован. Для этой темы нужен плагин версии выше %s. Обновите "
+"плагин."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Все плагины установлены и успешно активированы. %1$s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr "Игнорировать это уведомление"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:404
+#, fuzzy
+msgid "Please contact the administrator of this site for help."
+msgstr "Свяжитесь с администратором сайта."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr "Необходим"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr "Рекомендован"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr "WordPress репозиторий"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2380
+#, fuzzy
+msgid "External Source"
+msgstr "Внешний ресурс"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr "Поставляемый"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr "Не установлен"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr "Установлен, но не активирован"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2406
+#, fuzzy
+msgid "Active"
+msgstr "Активный"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2412
+#, fuzzy
+msgid "Required Update not Available"
+msgstr "Необходимое обновление не доступно."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2415
+#, fuzzy
+msgid "Requires Update"
+msgstr "Необходимо обновление"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2418
+#, fuzzy
+msgid "Update recommended"
+msgstr "Обновление рекомендовано"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2575
+#, fuzzy
+msgid "Installed version:"
+msgstr "Установлена версия:"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2583
+#, fuzzy
+msgid "Minimum required version:"
+msgstr "Минимально необходимая версия:"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2595
+#, fuzzy
+msgid "Available version:"
+msgstr "Доступна версия:"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2635
+msgid "Plugin"
+msgstr "Плагин"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2636
+msgid "Source"
+msgstr "Ресурс"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2637
+msgid "Type"
+msgstr "Тип"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2641
+#, fuzzy
+msgid "Version"
+msgstr "Версия"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2642
+#: options.php:82
+msgid "Status"
+msgstr "Статус"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2691
+#, fuzzy, php-format
+msgid "Install %2$s"
+msgstr "Установка %2$s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2696
+#, fuzzy, php-format
+msgid "Update %2$s"
+msgstr "Обновление %2$s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2702
+#, fuzzy, php-format
+msgid "Activate %2$s"
+msgstr "Активация %2$s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2805
+msgid "Install"
+msgstr "Установить"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2811
+#, fuzzy
+msgid "Update"
+msgstr "Обновление"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2814
+msgid "Activate"
+msgstr "Активировать"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2845
+#, fuzzy
+msgid "No plugins were selected to be installed. No action taken."
+msgstr "Ни одного плагина не было выбрано."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2847
+#, fuzzy
+msgid "No plugins were selected to be updated. No action taken."
+msgstr "Ни одного плагина не было выбрано."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2888
+#, fuzzy
+msgid "No plugins are available to be installed at this time."
+msgstr "Нет доступных для инсталляции плагинов."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2890
+#, fuzzy
+msgid "No plugins are available to be updated at this time."
+msgstr "Нет плагинов доступных для обновления."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3246
+msgid "Plugin activation failed."
+msgstr "Не получилось активировать плагин."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3586
+#, fuzzy, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Обновляем плагин %1$s (%2$d/%3$d)"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3589
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Произошла ошибка при установке плагина %1$s: <strong>%2$s</strong>."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Не получилось установить плагин %1$s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3595
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Начинаем процесс установки и активации. Это может занять некоторое время, "
+"поэтому, пожалуйста, будьте терпеливы."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s установлен и успешно активирован."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3598
+msgid "All installations and activations have been completed."
+msgstr "Все процессы установки и активации были завершены."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3600
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Установка и активация плагина %1$s (%2$d/%3$d)"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3603
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Начинаем процесс установки. Это может занять некоторое время, поэтому, "
+"пожалуйста, будьте терпеливы."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3606
+msgid "All installations have been completed."
+msgstr "Все процессы установки были завершены."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3608
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Устанавливаем плагин %1$s (%2$d/%3$d)"
+
+#: framework/functions/global.php:663
+msgid "Previous"
+msgstr "Назад"
+
+#: framework/functions/global.php:664
+msgid "Next"
+msgstr "Вперед"
+
+#: framework/functions/global.php:765
+msgid "Leave a reply"
+msgstr "Написать комментарий"
+
+#: framework/functions/global.php:765
+msgid "1 Comment"
+msgstr "Комментариев: 1"
+
+#: framework/functions/global.php:765
+msgid "% Comments"
+msgstr "Комментариев: %"
+
+#: framework/functions/ie-css.php:37
+msgid "Sorry, you're not able to browse this website."
+msgstr "К сожалению, Вы не можете просматривать этот сайт."
+
+#: framework/functions/ie-css.php:38
+msgid ""
+"Because you are using an outdated version of MS Internet Explorer. <br/> For "
+"a better experience using websites, please upgrade to a modern web browser."
+msgstr ""
+"Потому что вы используете устаревшую версию браузера Internet Explorer. <br/"
+"> Пожалуйста, обновите Internet Explorer или используйте другой браузер."
+
+#: framework/functions/register-menu.php:41
+msgid "Primary Menu"
+msgstr "Основное меню"
+
+#: framework/functions/register-menu.php:44
+msgid "Secondary Menu"
+msgstr "Дополнительное меню"
+
+#: framework/functions/register-menu.php:246
+msgid "Home"
+msgstr "Главная"
+
+#: framework/functions/register-menu.php:267
+msgid "Select a page &crarr;"
+msgstr "Выберите страницу &crarr;"
+
+#: framework/functions/register-sidebars.php:48
+msgid ""
+"Appears on posts and pages except the optional Front Page, which has its own "
+"widgets."
+msgstr "Доступно везде кроме главной страницы."
+
+#: framework/functions/register-sidebars.php:64
+msgid ""
+"Additional sidebar. Usually, it comes by left side of post. Appears on posts "
+"only."
+msgstr ""
+"Дополнительный сайдбар. Показывается только в постах. Обычно расположен "
+"слева от контентной части."
+
+#: framework/functions/register-sidebars.php:106
+msgid ""
+"Appears on projects and archives of projects depends of selected template."
+msgstr ""
+"Показывается на странице проекта или архивах проектов в зависимости от "
+"выбранного шаблона."
+
+#: framework/functions/register-sidebars.php:122
+msgid "Appears on all pages at the bottom of site."
+msgstr "Показывается в нижней части всех страниц сайта."
+
+#: framework/functions/register-sidebars.php:138
+msgid "Appears on bbPress forum pages."
+msgstr "Показывается на страницах bbPress-форума."
+
+#: framework/functions/register-sidebars.php:154
+#, fuzzy
+msgid "Appears on BuddyPress pages."
+msgstr "Показывается на страницах BuddyPress."
+
+#: framework/functions/register-sidebars.php:170
+msgid "Appears on selected posts and pages."
+msgstr "Показывается на выбранных постах и страницах."
+
+#: framework/welcome.php:17
+#, php-format
+msgid "<h2>Welcome to</h2><h1>%s <span>v.%s</span></h1>"
+msgstr ""
+
+#: framework/welcome.php:19
+#, php-format
+msgid "<h2>%s <span>v.%s</span></h2><h1>Setup Process</h1>"
+msgstr ""
+
+#: framework/welcome.php:21
+#, php-format
+msgid ""
+"Thank you for choosing the theme created by <a target='_blank' href='http://"
+"strictthemes.com/to/portfolio/'>StrictThemes</a> team. Please follow further "
+"installation process for getting a clone of <a target='_blank' "
+"href='%s'>Demo Site</a>"
+msgstr ""
+
+#: includes/comments/comment.php:46 includes/comments/pingback.php:44
+msgid "at"
+msgstr "в"
+
+#: includes/comments/comment.php:62
+msgid "Reply"
+msgstr "Ответить"
+
+#: includes/comments/comment.php:64
+msgid "Cancel"
+msgstr "Отмена"
+
+#: includes/comments/comment.php:73 includes/comments/pingback.php:32
+msgid "Edit"
+msgstr "Редактировать"
+
+#: includes/comments/comment.php:78
+msgid "Your comment is awaiting moderation."
+msgstr "Ваш комментарий ожидает модерации."
+
+#: includes/posts/default.php:32
+msgid "Pages:"
+msgstr "Страницы:"
+
+#: includes/posts/featured.php:48 includes/posts/featured.php:94
+#: includes/posts/featured.php:149 includes/posts/t4.php:52
+msgid "More"
+msgstr "Далее"
+
+#: includes/sidebars/sidebar_homepage_a.php:16
+msgid "Welcome to"
+msgstr "Добро пожаловать в"
+
+#: includes/sidebars/sidebar_homepage_a.php:17
+msgid ""
+"For replacing this dummy info, please, drop a widget on \"Homepage Sidebar "
+"1\" at Appearance > Widgets page."
+msgstr ""
+"Чтобы заменить эту информацию на собственную, пожалуйста, добавьте любой "
+"виджет в \"Homepage Sidebar 1\"."
+
+#: includes/sidebars/sidebar_homepage_a.php:21
+msgid "Live demo"
+msgstr "Демо"
+
+#: includes/sidebars/sidebar_homepage_a.php:22
+msgid "Documentation"
+msgstr "Документация"
+
+#: includes/sidebars/sidebar_homepage_a.php:23
+msgid "Theme Panel"
+msgstr "Панель темы"
+
+#: includes/sidebars/sidebar_homepage_a.php:30
+msgid "Setup custom logo"
+msgstr "Установить свое лого"
+
+#: includes/sidebars/sidebar_homepage_a.php:31
+msgid "Setup Google Analytics"
+msgstr "Установить Гугл Аналитикс"
+
+#: includes/sidebars/sidebar_homepage_a.php:32
+msgid "Change blog template"
+msgstr "Выбрать шаблон блога"
+
+#: includes/sidebars/sidebar_homepage_a.php:33
+msgid "Select footer scheme"
+msgstr "Выбрать вариант футера"
+
+#: includes/sidebars/sidebar_homepage_a.php:34
+msgid "Use another font"
+msgstr "Использовать другой шрифт"
+
+#: includes/sidebars/sidebar_homepage_a.php:35
+msgid "Tweak colors"
+msgstr "Настроить цвета"
+
+#: includes/sidebars/sidebar_homepage_a.php:36
+msgid "Enable portfolio"
+msgstr "Активировать портфолио"
+
+#: options.php:54
+msgid "Aside"
+msgstr "Другой"
+
+#: options.php:58
+msgid "Image"
+msgstr "Изображение"
+
+#: options.php:62
+msgid "Gallery"
+msgstr "Галерея"
+
+#: options.php:66
+msgid "Audio"
+msgstr "Аудио"
+
+#: options.php:70
+msgid "Video"
+msgstr "Видео"
+
+#: options.php:74
+msgid "Link"
+msgstr "Ссылка"
+
+#: options.php:78
+msgid "Quote"
+msgstr "Цитата"
+
+#: options.php:86
+msgid "Chat"
+msgstr "Чат"
+
+#: options.php:176
+msgid "Appears on the header of all pages."
+msgstr "Показывается в хедере всех страниц."
+
+#: options.php:177
+msgid "Appears on the middle of homepage."
+msgstr "Показывается в середине главной страницы."
+
+#: options.php:178
+msgid "Appears on the bottom of all pages."
+msgstr "Показывается внизу всех страниц."
+
+#: options.php:349 options.php:464
+msgid "Default"
+msgstr "По-умолчанию"
+
+#: options.php:351
+msgid "This is standard template."
+msgstr "Это стандартный шаблон."
+
+#: options.php:371
+msgid "Template with thumbnails."
+msgstr "Шаблон с миниатюрами."
+
+#: options.php:391
+msgid "Minimalistic template. Also it used on search page."
+msgstr "Минималистичный шаблон. Также он используется на странице поиска."
+
+#: options.php:521
+msgid "Light"
+msgstr "Светлый"
+
+#: options.php:525
+msgid "Dark"
+msgstr "Темный"
+
+#: search.php:109
+msgid ""
+"Sorry, nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr "Пожалуйста, попробуйте еще раз используя другие ключевые слова."
+
+#: single.php:199
+msgid "You Might Also Like"
+msgstr "См. также"
+
+#~ msgid "All plugins installed and activated successfully. %s"
+#~ msgstr "Все плагины установлены и успешно активированы. %s"
+
+#~ msgid "Please enter your Envato Marketplace Username."
+#~ msgstr "Пожалуйста, введите свой логин на Envato Marketplace."
+
+#~ msgid "Please enter your Envato Marketplace API Key."
+#~ msgstr "Пожалуйста, введите свой API-ключ на Envato Marketplace."
+
+#~ msgid "The API \"set\" is a required parameter."
+#~ msgstr "Обязательный параметр."
+
+#~ msgid "The Envato Marketplace \"item ID\" is a required parameter."
+#~ msgstr "Обязательный параметр."
+
+#~ msgid "Something went wrong."
+#~ msgstr "Что-то пошло не так."
+
+#~ msgid "Private Repository"
+#~ msgstr "Частный репозиторий"
+
+#~ msgid ""
+#~ "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+#~ "Dashboard\">Return to the Dashboard</a>"
+#~ msgstr ""
+#~ "Нечего устанавливать или активировать. <a href=\"%1$s\" title=\"Вернуться "
+#~ "к рабочему столу\">Вернуться к рабочему столу</a>"
+
+#~ msgid "Install package not available."
+#~ msgstr "Не получается установить."
+
+#~ msgid ""
+#~ "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+#~ msgstr "Загружаем из <span class=\"code\">%s</span>&#8230;"
+
+#~ msgid "Unpacking the package&#8230;"
+#~ msgstr "Распаковываем..."
+
+#~ msgid "Installing the plugin&#8230;"
+#~ msgstr "Устанавливаем плагин..."
+
+#~ msgid "Plugin install failed."
+#~ msgstr "Не получилось установить плагин."
+
+#~ msgid "Plugin installed successfully."
+#~ msgstr "Плагин успешно установлен."
+
+#~ msgid "Show Details"
+#~ msgstr "Развернуть"
+
+#~ msgid "Hide Details"
+#~ msgstr "Свернуть"
+
+#~ msgid "%1$s installed successfully."
+#~ msgstr "%1$s успешно установлен."
+
+#~ msgid "Appears on the middle of some pages depends of concept of the theme."
+#~ msgstr ""
+#~ "Показывается в середине странице проекта или архивах проектов в "
+#~ "зависимости от выбранного шаблона."
+
+#~ msgid "This template comes with an excerpt instead of a whole post."
+#~ msgstr "В этом шаблоне тело поста заменено выдержкой."
+
+#~ msgid ""
+#~ "Portfolio inactive. Turn On <strong>Projects</strong> at <em>Theme Panel "
+#~ "> Projects</em> page."
+#~ msgstr ""
+#~ "Функция «Портфолио» неактивна. Поставьте галочку на странице <em>Панель "
+#~ "темы > Проекты</em>."
+
+#~ msgid "Appears on Front Page by default."
+#~ msgstr "По-умолчанию, показывается на главной странице."
+
+#~ msgid "Continue"
+#~ msgstr "Далее"
+
+#~ msgid "A recent project goes here"
+#~ msgstr "Здесь будет новый проект"
+
+#~ msgid "In progress"
+#~ msgstr "В процессе"
+
+#~ msgid "Read Post"
+#~ msgstr "Читать пост"
+
+#~ msgid "Loading..."
+#~ msgstr "Загрузка..."
+
+#~ msgid "That's all."
+#~ msgstr "Это всё."
+
+#~ msgid "Oh :("
+#~ msgstr "Ой :("
+
+#~ msgid "Sorry, nothing matched your search criteria."
+#~ msgstr "К сожалению, ничего не найдено."
+
+#~ msgid "More about"
+#~ msgstr "Узнать больше"
+
+#~ msgid "Media Portfolio <span>&</span> Blog"
+#~ msgstr "Медиапортфолио <span>и</span> Блог"

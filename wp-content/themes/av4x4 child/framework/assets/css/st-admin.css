@@ -1,0 +1,152 @@
+
+/*= 01. =========================================
+
+	WELCOME PAGE
+	Styles foe Welcome page
+
+===============================================*/
+
+	/*-------------------------------------------
+		1.1 - General
+	-------------------------------------------*/
+
+	.appearance_page_st-theme-welcome #wpcontent {
+		padding-left: 0;
+	}
+	
+		.appearance_page_st-theme-welcome .notice-warning,
+		.appearance_page_st-theme-welcome .sb_instagram_notice {
+			display: none;
+		}
+
+	/*-------------------------------------------
+		1.2 - Header
+	-------------------------------------------*/
+
+	.st-feature {
+		display: flex;
+		align-items: flex-end;
+		color: #FFF;
+		background: #494158;
+	}
+
+		.st-feature > div {
+			flex-direction: row;
+		}
+
+			.st-feature > div:first-child {
+				width: 65%;
+				padding: 35px 50px 50px;
+			}
+
+			@media only screen and ( max-width: 1100px ) {
+
+				.st-feature > div:first-child {
+					width: 80%;
+					padding-bottom: 25px;
+				}
+
+			}
+
+			@media only screen and ( max-width: 871px ) {
+
+				.st-feature > div:nth-child(2) {
+					display: none;
+				}
+
+			}
+
+				.st-feature h1,
+				.st-feature h2 {
+					color: #FFF;
+					text-align: left;
+					font-weight: 300;
+					margin: 0;
+				}
+	
+					.st-feature h1 span {
+						font-size: 60%;
+						line-height: 60%;
+					}
+	
+				@media only screen and ( max-width: 1100px ) {
+	
+					.st-feature h1 {
+						font-size: 2.3em;
+					}
+	
+					.st-feature h2 {
+						font-size: 1.6em;
+					}
+	
+				}
+
+			.st-feature p {
+				opacity: 0.6;
+			}
+
+			.st-feature a {
+				color: #FFF;
+			}
+
+				.st-feature a:hover {
+					text-decoration: none;
+				}
+
+	/*-------------------------------------------
+		1.3 - Welcome panel
+	-------------------------------------------*/
+
+	.st-welcome-panel {
+		margin: 0;
+		padding: 50px 50px 25px;
+	}
+
+		.st-welcome-panel .welcome-panel-content {
+			margin: 0;
+		}
+
+			.st-welcome-panel .welcome-panel-column:first-child {
+				margin-bottom: 25px;
+			}
+
+			@media only screen and ( min-width: 871px ) {
+
+				.st-welcome-panel .welcome-panel-column:first-child {
+					width: 60%;
+					margin-right: 4%;
+				}
+
+			}
+
+				.st-about-wrap .about-text {
+					min-height: 0;
+					margin: 11px 0 25px;
+				}
+
+				.wp-core-ui .welcome-panel-column:first-child .button.button-primary.button-hero {
+					margin: 0 0 20px;
+				}
+
+			.st-about-wrap h3 {
+				margin: 0;
+			}
+
+			.st-welcome-panel .welcome-panel-column ul {
+				margin: 20px 0;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

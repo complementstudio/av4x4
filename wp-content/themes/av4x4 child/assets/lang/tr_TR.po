@@ -1,0 +1,715 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: strictthemes.com\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-07-22 00:20+0200\n"
+"PO-Revision-Date: 2016-07-22 00:20+0200\n"
+"Last-Translator: \n"
+"Language-Team: StrictThemes <info@strictthemes.com>\n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:20
+msgid "Sorry, the page you asked for couldn't be found."
+msgstr "Üzgünüz, aradığınız sayfa bulunamadı."
+
+#: 404.php:21
+msgid "Please, try to use the search form below."
+msgstr "Lütfen aşağıdaki arama formunu kullanmayı deneyiniz."
+
+#: 404.php:30 header.php:74
+msgid "Search..."
+msgstr "Ara..."
+
+#: 404.php:37
+msgid "Here's a little map that might help you get back on track:"
+msgstr ""
+"Burada doğru sayfayı bulmanıza yardımcı olabilecek küçük bir harita "
+"bulunmaktadır:"
+
+#: 404.php:41
+msgid "Categories"
+msgstr "Kategoriler"
+
+#: 404.php:48
+msgid "Archives"
+msgstr "Arşivler"
+
+#: 404.php:55 page.php:150 single.php:180
+msgid "Pages"
+msgstr "Sayfalar"
+
+#: archive.php:224 index.php:66 search.php:101 template-blog.php:200
+msgid "Older posts"
+msgstr "Eski yazılar"
+
+#: archive.php:224 index.php:66 search.php:101 template-blog.php:200
+msgid "Newer posts"
+msgstr "Yeni yazılar"
+
+#: archive.php:401
+msgid "Older projects"
+msgstr "Eski tasarılar"
+
+#: archive.php:401
+msgid "Newer projects"
+msgstr "Yeni tasarılar"
+
+#: archive.php:456 attachment.php:110 page.php:169 single.php:295
+msgid "Sorry, no posts matched your criteria."
+msgstr "Üzgünüz, aradığınız kriterlere uygun bir yazı bulunamadı."
+
+#: comments.php:35
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Bu yazı şifre korumalıdır. Yorumları görüntüleyebilmek için şifreyi giriniz."
+
+#: comments.php:74
+msgid "Comments"
+msgstr "Yorumlar"
+
+#: comments.php:96
+msgid "Pingbacks"
+msgstr "Pingbacks"
+
+#: comments.php:112
+msgid "Older comments"
+msgstr "Eski yorumlar"
+
+#: comments.php:113
+msgid "Newer comments"
+msgstr "Yeni yorumlar"
+
+#: comments.php:143
+msgid "You must be logged in to post a comment."
+msgstr "Yorum yapabilmeniz için giriş yapmanız gerekmektedir."
+
+#: comments.php:143
+msgid "Log in"
+msgstr "Giriş yap"
+
+#: comments.php:161
+msgid "Name"
+msgstr "İsim"
+
+#: comments.php:174
+msgid "Email"
+msgstr "Eposta"
+
+#: comments.php:188
+msgid "Website"
+msgstr "Website"
+
+#: comments.php:204
+msgid "Type here"
+msgstr "Buraya yazın"
+
+#: framework/functions/checking.php:31
+msgid "You're using ST Kit plugin v."
+msgstr "ST Kit plugin v. kullanıyorsunuz"
+
+#: framework/functions/checking.php:31
+msgid "however"
+msgstr "ancak"
+
+#: framework/functions/checking.php:31
+msgid "theme requires ST Kit v."
+msgstr "tema için ST Kit v. gerekmektedir"
+
+#: framework/functions/checking.php:31
+msgid "or higher. Update plugin"
+msgstr "yada daha yükseğine. Eklentici güncelle"
+
+#: framework/functions/checking.php:31
+msgid "here"
+msgstr "buraya"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr "Gerekli Eklentileri Kur"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "Eklentileri Kur"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Eklenti Kuruluyor: %s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:339
+#, fuzzy, php-format
+msgid "Updating Plugin: %s"
+msgstr "Eklenti Kuruluyor: %s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr "API eklentisiyle ilgili birşeyler ters gitti."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr "Gerekli Eklentiler Kurulumuna Geri Dön"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:393
+msgid "Return to the Dashboard"
+msgstr "Gösterge Paneline Geri Dön"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:394
+#: framework/functions/classes/class-tgm-plugin-activation.php:3247
+msgid "Plugin activated successfully."
+msgstr "Eklenti başarıyla aktifleştirildi."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:395
+#, fuzzy
+msgid "The following plugin was activated successfully:"
+msgstr "İlgili eklenti başarıyla aktifleştirildi: : %s."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Tüm eklentiler başarıyla kuruldu ve aktifleştirildi. %1$s"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr "Bu bildirimi görmezden gel"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr "Gerekli"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr "Tavsiye Edilir"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr "WordPress Veri Havuzu"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2380
+#, fuzzy
+msgid "External Source"
+msgstr "Dış Bağlantı"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr "Ön-Paketlenmiş"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr "Kurulmadı"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr "Kuruldu Ancak Aktifleştirilmedi"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2406
+#, fuzzy
+msgid "Active"
+msgstr "Aktifleştir"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2415
+#, fuzzy
+msgid "Requires Update"
+msgstr "Gerekli"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2418
+#, fuzzy
+msgid "Update recommended"
+msgstr "Tavsiye Edilir"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2575
+#, fuzzy
+msgid "Installed version:"
+msgstr "Eklentileri Kur"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2635
+msgid "Plugin"
+msgstr "Eklenti"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2636
+msgid "Source"
+msgstr "Kaynak"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2637
+msgid "Type"
+msgstr "Yazın"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2641
+msgid "Version"
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2642
+#: options.php:82
+msgid "Status"
+msgstr "Durum"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2691
+#, fuzzy, php-format
+msgid "Install %2$s"
+msgstr "Yükle"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2702
+#, fuzzy, php-format
+msgid "Activate %2$s"
+msgstr "Aktifleştir"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2805
+msgid "Install"
+msgstr "Yükle"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2811
+msgid "Update"
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2814
+msgid "Activate"
+msgstr "Aktifleştir"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2845
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2847
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2888
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:2890
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3246
+msgid "Plugin activation failed."
+msgstr "Eklenti aktifleştirilmesi başarısız oldu."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3586
+#, fuzzy, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Ekenti Kurulumu %1$s (%2$d/%3$d)"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3589
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Kurulum esnasında bir hata oluştu %1$s: <strong>%2$s</strong>."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "%1$s kurulumu başarısız oldu."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3595
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Kurulum ve etkinleştirme işlemi başlatıldı. Bu işlem sunucuya bağlı olarak "
+"biraz süre alabilir, lütfen bekleyiniz."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s başarıyla kuruldu ve aktifleştirildi."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3598
+msgid "All installations and activations have been completed."
+msgstr "Tüm kurulumlar ve etkinleştirmeler tamamlandı."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3600
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Eklenti Kuruluyor ve Etkinleştiriliyor %1$s (%2$d/%3$d)"
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3603
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Kurulum işlemi başlatıldı. Bu işlem sunucuya bağlı olarak biraz süre "
+"alabilir, lütfen bekleyiniz."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3606
+msgid "All installations have been completed."
+msgstr "Tüm kurulumlar tamamlanmıştır."
+
+#: framework/functions/classes/class-tgm-plugin-activation.php:3608
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Ekenti Kurulumu %1$s (%2$d/%3$d)"
+
+#: framework/functions/global.php:663
+msgid "Previous"
+msgstr "Önceki"
+
+#: framework/functions/global.php:664
+msgid "Next"
+msgstr "Sonraki"
+
+#: framework/functions/global.php:765
+msgid "Leave a reply"
+msgstr "Cevap yazın"
+
+#: framework/functions/global.php:765
+msgid "1 Comment"
+msgstr "1 Yorum"
+
+#: framework/functions/global.php:765
+msgid "% Comments"
+msgstr "% Yorumlar"
+
+#: framework/functions/ie-css.php:37
+msgid "Sorry, you're not able to browse this website."
+msgstr "Üzgünüz, bu websitesini görüntüleyemezsiniz."
+
+#: framework/functions/ie-css.php:38
+msgid ""
+"Because you are using an outdated version of MS Internet Explorer. <br/> For "
+"a better experience using websites, please upgrade to a modern web browser."
+msgstr ""
+"Çünki eski bir sürüm MS Internet Explorer kullanıyorsunuz. <br/> "
+"Websitelerinde daha iyi bir deneyim için, lütfen modern bir internat "
+"tarayıcısına terfi ediniz."
+
+#: framework/functions/register-menu.php:41
+msgid "Primary Menu"
+msgstr "Birinci Menü"
+
+#: framework/functions/register-menu.php:44
+msgid "Secondary Menu"
+msgstr "İkinci Menü"
+
+#: framework/functions/register-menu.php:246
+msgid "Home"
+msgstr "Anasayfa"
+
+#: framework/functions/register-menu.php:267
+msgid "Select a page &crarr;"
+msgstr "Bir sayfa seçin &crarr;"
+
+#: framework/functions/register-sidebars.php:48
+msgid ""
+"Appears on posts and pages except the optional Front Page, which has its own "
+"widgets."
+msgstr ""
+"Opsiyonel Front Page hariç yalnızca kendi widget'ına sahip sayfalarda ve "
+"yazılarda görünür."
+
+#: framework/functions/register-sidebars.php:64
+msgid ""
+"Additional sidebar. Usually, it comes by left side of post. Appears on posts "
+"only."
+msgstr ""
+"Ek kenar çubuğu. Genellikle, yazının sol yan kısmına gelir. Yalnızca "
+"yazılarda görünür."
+
+#: framework/functions/register-sidebars.php:106
+msgid ""
+"Appears on projects and archives of projects depends of selected template."
+msgstr "Seçili şablona bağlı olarak tasarılarda ve arşivlerde görünür."
+
+#: framework/functions/register-sidebars.php:122
+msgid "Appears on all pages at the bottom of site."
+msgstr "Sitenin altındaki tüm sayfalarda görünür."
+
+#: framework/functions/register-sidebars.php:138
+msgid "Appears on bbPress forum pages."
+msgstr "bbPress forum sayfalarında görünür."
+
+#: framework/functions/register-sidebars.php:154
+#, fuzzy
+msgid "Appears on BuddyPress pages."
+msgstr "bbPress forum sayfalarında görünür."
+
+#: framework/functions/register-sidebars.php:170
+msgid "Appears on selected posts and pages."
+msgstr "Seçili sayfa ve yazılarda görünür."
+
+#: framework/welcome.php:17
+#, php-format
+msgid "<h2>Welcome to</h2><h1>%s <span>v.%s</span></h1>"
+msgstr ""
+
+#: framework/welcome.php:19
+#, php-format
+msgid "<h2>%s <span>v.%s</span></h2><h1>Setup Process</h1>"
+msgstr ""
+
+#: framework/welcome.php:21
+#, php-format
+msgid ""
+"Thank you for choosing the theme created by <a target='_blank' href='http://"
+"strictthemes.com/to/portfolio/'>StrictThemes</a> team. Please follow further "
+"installation process for getting a clone of <a target='_blank' "
+"href='%s'>Demo Site</a>"
+msgstr ""
+
+#: includes/comments/comment.php:46 includes/comments/pingback.php:44
+msgid "at"
+msgstr " "
+
+#: includes/comments/comment.php:62
+msgid "Reply"
+msgstr "Yanıtla"
+
+#: includes/comments/comment.php:64
+msgid "Cancel"
+msgstr "İptal"
+
+#: includes/comments/comment.php:73 includes/comments/pingback.php:32
+msgid "Edit"
+msgstr "Düzenle"
+
+#: includes/comments/comment.php:78
+msgid "Your comment is awaiting moderation."
+msgstr "Yorumunuz onay bekliyor."
+
+#: includes/posts/default.php:32
+msgid "Pages:"
+msgstr "Sayfalar:"
+
+#: includes/posts/featured.php:48 includes/posts/featured.php:94
+#: includes/posts/featured.php:149 includes/posts/t4.php:52
+msgid "More"
+msgstr "Daha fazla"
+
+#: includes/sidebars/sidebar_homepage_a.php:16
+msgid "Welcome to"
+msgstr "Hoşgeldiniz"
+
+#: includes/sidebars/sidebar_homepage_a.php:17
+msgid ""
+"For replacing this dummy info, please, drop a widget on \"Homepage Sidebar "
+"1\" at Appearance > Widgets page."
+msgstr ""
+"Bu taklit bilgiyi değiştirmek için, lütfen Appearance > Widgets kısmına "
+"girerek \"Homepage Sidebar 1\" kısmına bir widget bırakın."
+
+#: includes/sidebars/sidebar_homepage_a.php:21
+msgid "Live demo"
+msgstr "Canlı demo"
+
+#: includes/sidebars/sidebar_homepage_a.php:22
+msgid "Documentation"
+msgstr "Dokümantasyon"
+
+#: includes/sidebars/sidebar_homepage_a.php:23
+msgid "Theme Panel"
+msgstr "Tema Paneli"
+
+#: includes/sidebars/sidebar_homepage_a.php:30
+msgid "Setup custom logo"
+msgstr "Özel logo ayarı"
+
+#: includes/sidebars/sidebar_homepage_a.php:31
+msgid "Setup Google Analytics"
+msgstr "Google Analytics Ayarı"
+
+#: includes/sidebars/sidebar_homepage_a.php:32
+msgid "Change blog template"
+msgstr "Blog şablonunu değiştir"
+
+#: includes/sidebars/sidebar_homepage_a.php:33
+msgid "Select footer scheme"
+msgstr "Footer şemasını seç"
+
+#: includes/sidebars/sidebar_homepage_a.php:34
+msgid "Use another font"
+msgstr "Başka bir font kullan"
+
+#: includes/sidebars/sidebar_homepage_a.php:35
+msgid "Tweak colors"
+msgstr "Renkleri ayarlar"
+
+#: includes/sidebars/sidebar_homepage_a.php:36
+msgid "Enable portfolio"
+msgstr "Portföyü etkinleştir"
+
+#: options.php:54
+msgid "Aside"
+msgstr "Kenar"
+
+#: options.php:58
+msgid "Image"
+msgstr "Resim"
+
+#: options.php:62
+msgid "Gallery"
+msgstr "Galeri"
+
+#: options.php:66
+msgid "Audio"
+msgstr "Ses"
+
+#: options.php:70
+msgid "Video"
+msgstr "Video"
+
+#: options.php:74
+msgid "Link"
+msgstr "Link"
+
+#: options.php:78
+msgid "Quote"
+msgstr "Alıntı"
+
+#: options.php:86
+msgid "Chat"
+msgstr "Sohbet"
+
+#: options.php:176
+msgid "Appears on the header of all pages."
+msgstr "Tüm sayfaların üstünde görünür."
+
+#: options.php:177
+msgid "Appears on the middle of homepage."
+msgstr "Tüm sayfaların ortasında görünür."
+
+#: options.php:178
+msgid "Appears on the bottom of all pages."
+msgstr "Tüm sayfaların altında görünür."
+
+#: options.php:349 options.php:464
+msgid "Default"
+msgstr "Varsayılan"
+
+#: options.php:351
+msgid "This is standard template."
+msgstr "Bu standart şablondur."
+
+#: options.php:371
+msgid "Template with thumbnails."
+msgstr "Şablon küçük resimlerle."
+
+#: options.php:391
+msgid "Minimalistic template. Also it used on search page."
+msgstr "Minimalistik şablon. Ayrıca arama sayfasında kullanılır."
+
+#: options.php:521
+msgid "Light"
+msgstr "Açık"
+
+#: options.php:525
+msgid "Dark"
+msgstr "Koyu"
+
+#: search.php:109
+msgid ""
+"Sorry, nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+"Üzgünüz, aradığınız kriterlerde bir sonuç bulunamadı. Lütfen farklı "
+"kelimelerle yeniden deneyiniz."
+
+#: single.php:199
+msgid "You Might Also Like"
+msgstr "İLGİNİZİ ÇEKEBİLECEK DİĞER YAZILAR"
+
+#~ msgid "All plugins installed and activated successfully. %s"
+#~ msgstr "Tüm eklentiler başarıyla kuruldu ve aktifleştirildi. %s"
+
+#~ msgid "Please enter your Envato Marketplace Username."
+#~ msgstr "Lütfen Envato Marketplace kullanıcı adınızı giriniz."
+
+#~ msgid "Please enter your Envato Marketplace API Key."
+#~ msgstr "Lütfen Envato Marketplace API anahtarınızı giriniz."
+
+#~ msgid "The API \"set\" is a required parameter."
+#~ msgstr "API \"set\" için parametre gerekmektedir."
+
+#~ msgid "The Envato Marketplace \"item ID\" is a required parameter."
+#~ msgstr "Envato Marketplace \"item ID\" için parametre gerekmektedir."
+
+#~ msgid "Something went wrong."
+#~ msgstr "Bir hata oluştu."
+
+#~ msgid "Private Repository"
+#~ msgstr "Özel Veri Havuzu"
+
+#~ msgid ""
+#~ "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+#~ "Dashboard\">Return to the Dashboard</a>"
+#~ msgstr ""
+#~ "Hiçbir eklenti kurulmadı yada aktifleştirilmedi. <a href=\"%1$s\" title="
+#~ "\"Return to the Dashboard\">Gösterge Paneline geri dön</a>"
+
+#~ msgid "Install package not available."
+#~ msgstr "Kurulum paketi mevcut değil."
+
+#~ msgid ""
+#~ "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+#~ msgstr ""
+#~ "Kurulum paketi şuradan indiriliyor <span class=\"code\">%s</span>&#8230;"
+
+#~ msgid "Unpacking the package&#8230;"
+#~ msgstr "Paket açılıyor&#8230;"
+
+#~ msgid "Installing the plugin&#8230;"
+#~ msgstr "Eklenti kuruluyor&#8230;"
+
+#~ msgid "Plugin install failed."
+#~ msgstr "Eklenti kurulumu başarısız oldu."
+
+#~ msgid "Plugin installed successfully."
+#~ msgstr "Eklenti başarıyla kuruldu."
+
+#~ msgid "Show Details"
+#~ msgstr "Detayları Göster"
+
+#~ msgid "Hide Details"
+#~ msgstr "Detayları Gizle"
+
+#~ msgid "%1$s installed successfully."
+#~ msgstr "%1$s başarıyla kuruldu."

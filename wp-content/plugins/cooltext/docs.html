@@ -1,0 +1,358 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1200">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/cooltext.wp.animations.js"></script>
+	<script type="text/javascript" src="js/cooltext.wp.min.js"></script>
+	
+	<script type="text/javascript" src="assets/js/syntaxhighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="assets/js/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="assets/js/syntaxhighlighter/scripts/shBrushXml.js"></script>
+	<link type="text/css" rel="stylesheet" href="assets/js/syntaxhighlighter/styles/shCoreDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<style>
+
+	.syntaxhighlighter .toolbar {display:none;}
+	.syntaxhighlighter { 
+		overflow-y: hidden !important; 
+		overflow-x: auto !important; 
+		font-size: 16px!important;
+	}
+
+	.gutter {display: none}
+
+	.toc li {
+		padding:5px 0 5px 0;
+	}
+
+	.toc li a {
+		font-size:20px;
+		font-weight: normal!important;
+	}
+
+	.code {
+		font-size:16px!important;
+		color:#111;
+		padding:20px;
+		font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+		background:#f0f0f0;
+		border:2px dotted #999;
+		border-radius:10px;
+	}
+
+	</style>
+
+	<meta name="Author" content="Thomas Dolso" />
+	<title>CoolText - Documentation</title>
+</head>
+
+
+<body>
+
+<div class="title">
+   <div class="wrapper">
+      <h1>CoolText Documentation</h1>
+      <p>Below you can find the CoolText documentation.</p>
+   </div>
+</div>
+
+	<div class="white_strip" style="margin-top:0!important">
+	   <div class="wrapper">
+
+			<div id="sec_installation" class="section">
+
+				<br>
+				<br>
+				<h2 style="border:none">Table of Contents</h2>
+			   <p>
+			   	<ul class="toc">
+			   		<li><a href="#ct">CoolText</a></li>
+			   		<li><a href="#animations">Animations</a></li>
+			   		<li><a href="#installation">Installation</a></li>
+			   		<li><a href="#shortcodes">Shortcodes</a></li>
+			   		<li><a href="#advanced">Advanced Usage</a></li>
+			   	</ul>
+			   </p>
+
+
+
+				<a name="ct"></a>
+				<br>
+				<br>
+				<h2 style="border:none">CoolText</h2>
+			   <p>Created: <strong>February 2014</strong><br>
+By: <strong>Thomas Dolso</strong><br>
+Website: <a href="http://www.megalocode.com/cooltext-wordpress"><strong>www.megalocode.com/cooltext-wordpress</strong></a></p>
+
+
+				<a name="animations"></a>
+				<br>
+				<br>
+				<h2>Animations</h2>
+			   <p>
+			      CoolText already comes with 300 ready-to-use animations. There are basically three types of animations:
+			   </p>
+
+			   <p style="margin-left:30px;">
+			      <strong>IN</strong>: fading a text from opacity 0 to 1<br>
+			      <strong>OUT</strong>: fading a text from opacity 1 to 0<br>
+			      <strong>MID</strong>: opacity not affected
+			   </p>
+
+			   <p>
+			      <a href="animations.html">Take a look at all the available animations</a>.
+			   </p>
+
+
+			   <a name="installation"></a>
+				<br>
+				<br>
+				<h2 style="border:none">Installation</h2>
+			   <p>
+Once you have downloaded CoolText go to the Plugins tab in your WordPress Administration and click “Add New”.
+Then click “Upload” and select the zip file that you have downloaded from CodeCanyon.
+Once uploaded you have to active it. That's it!</p>
+
+				<h4>Manual Installation</h4>
+				<p>If you prefer to manually install CoolText plugin, please follow these steps:</p>
+				<p style="margin-left:30px;">
+					1. Unzip the downloaded archive<br>
+					2. Upload the folder <strong>cooltext</strong> to your <strong>/wp-content/plugins/</strong> directory<br>
+					3. Activate the plugin from Plugins > CoolText > Activate, under WordPress admin interface
+			   </p>
+				
+
+			   <a name="shortcodes"></a>
+				<br>
+				<br>
+			   <h2>Shortcodes</h2>
+			   <p>
+			      You can use CoolText in two ways. Let's start with the simplest one, shortcodes. If you want to animate a text inside your post content, title and so on, you have to enclose your text inside a shortcode. Below you can find the structure of the CoolText shortcodes with all the available parameters:
+			   </p>
+
+
+			   <p class="code">
+[cooltext sequence="" separator="" mouseover="" mouseout="" click="" settings=""]your text[/cooltext]
+				</p>
+
+			   <p style="margin-left:30px;">
+			      <strong>sequence</strong>: the animation sequence you want to perform<br>
+			      <strong>separator</strong>: used to create a text rotation<br>
+			      <strong>mouseover</strong>: the animation to perform on mouse over<br>
+			      <strong>mouseout</strong>: the animation to perform on mouse out<br>
+			      <strong>click</strong>: the animation to perform on click<br>
+			      <strong>settings</strong>: CoolText settings<br>
+			   </p>
+
+
+				<h4>Sequence</h4>
+			   <p>Inside the sequence parameter you can specify one or more animations you want to perform, separated by commas. The following example starts the animations called <strong>cool15</strong> when the page is shown.</p>
+
+			   <p class="code">
+[cooltext sequence="cool15"]your text[/cooltext]
+				</p>
+
+				<br>
+				<p>If you want to create an animation sequence you have to specify the animations separated by commas. Here is an example that starts with the IN animation <strong>cool15</strong> (the text is shown with a fade in effect), followed by a MID animation <strong>cool162</strong> and then by a OUT animation <strong>cool278</strong> (the text is hided with a fade out effect):</p>
+
+			   <p class="code">
+[cooltext sequence="cool15,cool162,cool278"]your text[/cooltext]
+				</p>
+
+				<br>
+				<p>In the above examples we used the default animation settings. But CoolText allows you to control the behavior of each animation. The parameters you can use are the following:</p>
+
+				<table class="ctable" width="100%" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr class="even">
+							<th width="100px">Parameter</th>
+							<th width="370px">Available values</th>
+							<th width="100px">Default value</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>animation</td>
+							<td>an animation name</td>
+							<td>-</td>
+							<td>
+								the animation name. <a href="animations.html">See all the available animations</a>
+							</td>
+						</tr>
+						<tr class="even">
+							<td>elements</td>
+							<td>"letters", "words"</td>
+							<td>"letters"</td>
+							<td>use it to tell CoolText to animate letters or words</td>
+						</tr>
+						<tr>
+							<td>speed</td>
+							<td>an integer from 1 to infinite</td>
+							<td>100</td>
+							<td>use this percentage to set the animation speed</td>
+						</tr>
+						<tr class="even">
+							<td>stagger</td>
+							<td>an integer from 1 to infinite</td>
+							<td>100</td>
+							<td>use this percentage to set the delay between elements (letters or words)</td>
+						</tr>
+						<tr>
+							<td>delay</td>
+							<td>seconds</td>
+							<td>0</td>
+							<td>the number of seconds to wait before the animation will start</td>
+						</tr>
+						<tr class="even">
+							<td>order</td>
+							<td>"forward", "reverse", "random"</td>
+							<td>"forward"</td>
+							<td>order in which the elements (letters or words) will be animated</td>
+						</tr>
+						<tr>
+							<td>color</td>
+							<td>css color</td>
+							<td>-</td>
+							<td>if used, CoolText change the text color during the animation</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<br>
+				<p>You can use the above parameters inside the sequence parameter, separated by "-".</p>
+				<p class="note">
+					<strong>NOTE</strong>: The above parameters have to be used in a precise order. Only the first one, <strong>animation</strong> is required, the others are optional. The correct order is: 
+					<strong>animation-elements-speed-stagger-delay-order-color</strong>. So, if for example you want to set the <strong>stagger</strong>, you have also to set <strong>elements</strong> and <strong>speed</strong>.
+				</p>
+
+
+				<p>Here is an example that animates words with a speed of 150% (faster than default) and with less delay between elements. Then, after 2 seconds, the animation cool162 is executed on letters with a speed of 130% and a stagger of 170%, in a reverse order, and during the animation the letters become yellow.</p>
+
+			   <p class="code">
+[cooltext sequence="cool15-words-150-130,cool162-letters-130-170-2-reverse-yellow"]your text[/cooltext]
+				</p>
+
+
+				<h4>Separator (Text Rotation)</h4>
+			   <p>CoolText allows you to create a text rotation simply specifying a separator. Here is an example:</p>
+
+			   <p class="code">
+[cooltext sequence="cool15,cool162,cool231" separator="-"]text1-text2-text3[/cooltext]
+				</p>
+
+				<p>In the above example <strong>text1</strong> are shown with the animation sequence <strong>cool15,cool162,cool231</strong>, then <strong>text2</strong> are shown with the same sequence and finally <strong>text3</strong>.</p>
+
+
+				<h4>Mouse Events</h4>
+			   <p>CoolText allows you to set animations to perform on mouseover, mouseout and mouseclick. The following example shows how to set different animations to the three mouse events.</p>
+
+			   <p class="code">
+[cooltext mouseover="cool172" mouseout="cool130" click="cool147"]your text[/cooltext]
+				</p>
+
+				<p>As described above, you can specify the settings for speed, stagger, etc. with the same syntax. Here is an example:</p>
+
+			   <p class="code">
+[cooltext mouseover="cool172-words-150-200-0-random"]your text[/cooltext]
+				</p>
+
+
+
+				<h4>Animating On Visible</h4>
+			   <p>You can also start an animation when the text become visible (while scrolling the page). Here is an example:</p>
+
+			   <p class="code">
+[cooltext visible="cool12"]your text[/cooltext]
+				</p>
+
+				<p>
+					If your text is visible when the page is loaded, the animation starts immediately.
+				</p>
+
+
+
+				<h4>Settings</h4>
+			   <p>There are some settings you can specify. Here they are:</p>
+
+			   <p style="margin-left:30px;">
+			      <strong>cycle</strong>: if specified, the sequence will be cyclic<br>
+			      <strong>antialias</strong>: sometimes (depends on the font you use) it improves text readability<br>
+			      <strong>waitforload</strong>: if specified, CoolText waits for document load before start<br>
+			   </p>
+
+			   <p>You can specify these settings with the <strong>settings</strong> parameters. as shown in the following example:</p>
+
+			   <p class="code">
+[cooltext sequence="cool15,cool162,cool231" separator="-" settings="cycle,antialias"]text1-text2-text3[/cooltext]
+				</p>
+
+				<p>The above example performs a cyclic text rotation, applying the antialias to the text.</p>
+
+
+
+
+				<a name="advanced"></a>
+				<br>
+				<br>
+			   <h2>Advanced Usage</h2>
+			   <p>
+			      <img src="assets/images/wp-settings.jpg" style="float:right; margin:0 0 20px 40px; box-shadow:5px 5px 5px rgba(0,0,0,0.3)"> CoolText can also be used through the Wordpress Settings section. This is a powerful way to use CoolText because it allows you to add animations to any element of your website, using jQuery selectors. To do that you have to understand how thw jQuery selector engine works. <a href="http://api.jquery.com/category/selectors/" target="_blank">Here you can find the official documentation</a>. Below you can find some examples. 
+			      Go to <strong>Settings / CoolText</strong> in your Wordpress admin area. Here you can add as many behaviors you want. Click the <strong>Add New</strong> button and specify a <strong>Selector</strong> and a <strong>Behavior</strong>.
+			   </p>
+
+			   <br>
+			   <p>
+			      A <strong>Selector</strong> is a string used by jQuery to retrieve elements inside your page. For example:
+			   </p>
+			   <p style="margin-left:30px;">
+			      <strong>a</strong>: all the links (&lt;a&gt;)<br>
+			      <strong>h1.myclass</strong>: all the h1 tags with myclass class (&lt;h1 class="myclass"&gt;)<br>
+			      <strong>#elementid</strong>: an element with elementid id (&lt;div id="elementid"&gt;)<br>
+			   </p>
+
+			   <br>
+			   <p>
+			      The <strong>Behavior</strong> has exactly the same syntax included in the left part of the shortcode. Here is an example:
+			   </p>
+			   <p class="code">
+sequence="cool15,cool162,cool231" separator="-" settings="cycle,antialias"
+				</p>
+
+				<br>
+				<p>
+			      Here are some example you could use in your Wordpress website, based on the Twenty Fourteen theme.
+			   </p>
+
+				<p style="padding-top:20px; margin-top:20px; border-top:1px solid #ccc;">
+					<i>Add a mouse over effect to each navigation menu items</i><br>
+			      <strong>Selector</strong>:&nbsp;&nbsp;&nbsp;.nav-menu a<br>
+			      <strong>Behavior</strong>:&nbsp;&nbsp;&nbsp;mouseover="cool170"
+			   </p>	
+
+				<p style="padding-top:20px; margin-top:20px; border-top:1px solid #ccc;">
+					<i>Wait for page load and then show each post title with an animation</i><br>
+			      <strong>Selector</strong>:&nbsp;&nbsp;&nbsp;h1.entry-title<br>
+			      <strong>Behavior</strong>:&nbsp;&nbsp;&nbsp;sequence="cool77" settings="waitforload"
+			   </p>		   
+
+				<p style="padding-top:20px; margin-top:20px; border-top:1px solid #ccc;">
+					<i>Show each recent post (on the left) with an animation and set a mouse over effect for each item</i><br>
+			      <strong>Selector</strong>:&nbsp;&nbsp;&nbsp;.widget_recent_entries a<br>
+			      <strong>Behavior</strong>:&nbsp;&nbsp;&nbsp;sequence="cool1" mouseover="cool103"
+			   </p>		   
+
+
+			</div>
+
+	   </div>
+	</div>
+
+</body>
+</html>

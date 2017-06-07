@@ -1,0 +1,246 @@
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1200">
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script type="text/javascript" src="assets/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/cooltext.wp.animations.js"></script>
+	<script type="text/javascript" src="js/cooltext.wp.min.js"></script>
+	<script type="text/javascript" src="assets/js/angular.min.js"></script>
+
+	<link type="text/css" href="assets/js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+	<script type="text/javascript" src="assets/js/jscrollpane/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="assets/js/jscrollpane/jquery.jscrollpane.min.js"></script>		
+
+	<script src="assets/js/simpleslider/simple-slider.js"></script>
+	<link href="assets/js/simpleslider/simple-slider.css" rel="stylesheet" type="text/css" />
+
+	<meta name="Author" content="Thomas Dolso" />
+	<title>CoolText - Animations</title>
+</head>
+
+
+<body>
+
+
+<script>
+
+
+   function animationsCtrl($scope, $http)
+   {
+      $scope.animation = "null";
+      $scope.pack = "cool";
+      $scope.type = "in";
+      $scope.order = "forward";
+      $scope.animations = [];
+      $scope.text = "sample text to animate"
+      $scope.elements = "letters";
+      $scope.speed = 100;
+      $scope.stagger = 100;
+      $scope.font_size = 44;
+      $scope.num_selected = 0;
+      $scope.animation_string = "no amination selected";
+      
+
+      var init = function () {
+         $scope.animations = cool_animations;
+         $scope.animation = $scope.animations[0];
+         $j("#type_in").trigger("click");
+      };
+      
+
+      $scope.selectType = function(item){
+         $scope.type = item;
+      };
+      
+
+      $scope.selectOrder = function(item){
+         $scope.order = item;
+         $scope.playAnimation();
+      };
+
+
+      $scope.selectElements = function(item){
+         $scope.elements = item;
+         $scope.playAnimation();
+      };
+      
+
+      $scope.selectAnimation = function(item){
+         $scope.animation = item;
+         $scope.playAnimation();
+      };
+
+
+      $scope.playAnimation = function()
+      {
+         $j(".preview_text").remove();
+         $j(".preview").append('<div class="preview_text" style="font-size:' + $scope.font_size + '">' + $scope.text.replace(/\r\n|\r|\n/g,"<br />") + '</div>');
+         $j(".preview_text").cooltext({
+            sequence:[
+               {action:"animation", animation:$scope.animation.name, elements:$scope.elements, speed:$scope.speed, stagger:$scope.stagger, order:$scope.order},
+            ]
+         });
+
+         $scope.updateString();
+      };
+
+
+      $scope.updateString = function()
+      {
+         $scope.animation_string = $scope.animation.name;
+         if ($scope.elements != "letters")
+            $scope.animation_string += "," + $scope.elements;
+         if ($scope.speed != 100)
+            $scope.animation_string += "," + $scope.speed;
+         if ($scope.stagger != 100)
+            $scope.animation_string += "," + $scope.stagger;
+         if ($scope.delay != 0)
+            $scope.animation_string += "," + $scope.delay;
+         if ($scope.order != "forward")
+            $scope.animation_string += "," + $scope.order;
+         //if ($scope.color != "")
+            //$scope.animation_string += "," + $scope.color;
+      }
+
+
+      angular.element(document).ready(function () {
+         init();
+      });
+      
+
+   }
+
+</script>
+
+<div class="title">
+   <div class="wrapper">
+      <h1>CoolText Animations</h1>
+      <p>CoolText comes with 300 ready-to-use animations, grouped into IN (with fade in effect), OUT (with fade out effect) and MID.</p>
+   </div>
+</div>
+
+<div class="white_strip" ng-controller="animationsCtrl" id="animationsCtrl">
+   <div class="wrapper">
+      <div class="col" style="float:left; width:270px; border-right:1px solid #ddd">
+
+         <h2 class="t0">Animations</h2>
+
+         <div id="type_in" class="sel" ng-click="selectType('in')" ng-class="{flagd:type == 'in'}">IN</div> 
+         <div class="sel" ng-click="selectType('out')" ng-class="{flagd:type == 'out'}">OUT</div> 
+         <div class="sel" ng-click="selectType('mid')" ng-class="{flagd:type == 'mid'}">MID</div> 
+
+         <div class="anims">
+            <div class="anims_wrapper">
+               <div class="anim_item" ng-repeat="item in animations | filter:{type:type}" ng-click="selectAnimation(item)" ng-class="{current:item == animation}" >
+                  <div class="fl">{{item.name}}</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="right_col" style="float:right; width:800px;">
+
+         <h2 class="t0">Settings</h2>
+         
+         <div class="">
+
+            <div style="float:left; width:300px;">
+               <div class="sel" ng-click="selectOrder('forward')" ng-class="{flagd:order == 'forward'}">FORWARD</div> 
+               <div class="sel" ng-click="selectOrder('reverse')" ng-class="{flagd:order == 'reverse'}">REVERSE</div> 
+               <div class="sel" ng-click="selectOrder('random')" ng-class="{flagd:order == 'random'}">RANDOM</div> 
+               
+               <div style="margin-top:10px;">
+                  <div class="labl">Speed:</div> <input id="speed_slider" value="100" data-slider="true" data-slider-range="0,500" data-slider-step="1"> {{speed}} % 
+                  <input id="speed_value" ng-model="speed" type="text" style="display:none">
+               </div>
+               
+               <div style="margin-top:20px;">
+                  <div class="labl">FontSize:</div> <input id="font_size_slider" value="54" data-slider="true" data-slider-range="14,70" data-slider-step="1"> {{font_size}} px
+                  <input id="font_size_value" ng-model="font_size" type="text" style="display:none">
+               </div>
+            </div>
+
+            <div style="float:right; width:460px;">
+               <div class="sel" ng-click="selectElements('letters')" ng-class="{flagd:elements == 'letters'}">LETTERS</div> 
+               <div class="sel" ng-click="selectElements('words')" ng-class="{flagd:elements == 'words'}">WORDS</div> 
+               <div style="margin-top:10px;">
+                  <div class="labl">Stagger:</div> <input id="stagger_slider" value="100" data-slider="true" data-slider-range="0,500" data-slider-step="1"> {{stagger}} %
+                  <input id="stagger_value" ng-model="stagger" type="text" style="display:none">
+               </div>
+               <div style="margin-top:10px;">
+                  <textarea ng-model="text" class="ib" style="resize: none; width:100%; height:44px; font-size:16px; font-family:'Alegreya Sans', sans-serif;">
+                  </textarea>
+               </div>
+            </div>
+            
+         </div>
+         <div class="preview">
+            <div class="preview_text">
+            </div>
+         </div>
+
+      </div>
+   </div>
+</div>
+
+<script type="text/javascript">
+
+
+	$j(document).ready(function()
+	{
+		startLocal();
+	});
+
+
+   var dragging = false;
+
+   function startLocal()
+   {
+
+      $j("#speed_slider-slider .dragger, #stagger_slider-slider .dragger, #font_size_slider-slider .dragger").bind("mousedown", function(){
+         dragging = true;
+      })
+      $j("body").bind("mouseup", function(){
+         if (dragging)
+            angular.element('#animationsCtrl').scope().playAnimation();
+         dragging = false;
+      })
+      
+
+      $j("#speed_slider").bind("slider:changed", function(event, data) {
+         $j("#speed_value").val(data.value);
+         $j("#speed_value").trigger('input');
+      });
+
+      $j("#stagger_slider").bind("slider:changed", function(event, data) {
+         $j("#stagger_value").val(data.value);
+         $j("#stagger_value").trigger('input');
+      });
+
+      $j("#font_size_slider").bind("slider:changed", function(event, data) {
+         $j("#font_size_value").val(data.value);
+         $j("#font_size_value").trigger('input');
+      });
+
+      $j(".anims").jScrollPane({
+         verticalGutter:5,
+         mouseWheelSpeed:60,
+         maintainPosition:true,
+         autoReinitialise:true,
+         autoReinitialiseDelay:200,
+         hideFocus:true
+      });
+
+      
+      angular.element('#animationsCtrl').scope().playAnimation();
+   }
+
+
+</script>
+
+</body>
+</html>
